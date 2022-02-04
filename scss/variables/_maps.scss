@@ -1,0 +1,17 @@
+$texto-metodo: (
+    exfoliacion: $color-bordo,
+    derma: $color-azul,
+    acido: $color-bordo,
+    acne: $color-azul,
+    radio: $color-bordo,
+    micro: $color-azul,
+);
+
+@each $metodo, $color in $texto-metodo{
+    .#{$metodo}{
+        color: $color;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+}

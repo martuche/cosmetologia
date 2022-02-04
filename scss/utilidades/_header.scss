@@ -1,0 +1,34 @@
+nav {
+    background-color: $color-fondo;
+
+    .navbar-brand {
+        padding: 0;
+        height: 100px;
+        line-height: 100px;
+        font-family: $font-cuerpo;
+        font-weight: bold;
+    }
+
+    .navbar-nav {
+        font-family: $font-cuerpo;
+        font-weight: bold;
+
+        .nav-item {
+            margin: 2px;
+
+            .nav-link {
+                color: $color-texto;
+
+                &:hover {
+                    color: $color-azul;
+
+                }
+            }
+
+
+        }
+
+    }
+
+
+}

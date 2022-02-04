@@ -1,0 +1,24 @@
+.edit-servicios{
+    font-family: $font-cuerpo;
+    margin: 3rem auto 5rem;
+
+    h2{
+        @include estilo-texto ($color-texto, 40px, bold);
+    }
+
+    .edit-higiene{
+        width: 100%;        
+    }
+
+    .edit-dermamicro{
+        width: 90%;
+    }
+
+    .edit-video{
+        width: 50%;
+    }
+
+    .edit-acne{
+        width: 50%;
+    }
+}

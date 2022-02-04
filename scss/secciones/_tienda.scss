@@ -1,0 +1,102 @@
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "producto-1 producto-2 producto-3"
+        "producto-4 producto-5 producto-3"
+        "producto-6 producto-7 producto-8";
+    padding: 3rem;
+    font-family: $font-cuerpo;
+    align-items: center;
+
+    .producto-1 {
+        grid-area: producto-1;
+    }
+    .producto-2 {
+        grid-area: producto-2;
+    }
+    .producto-3 {
+        grid-area: producto-3;
+    }
+    .producto-4 {
+        grid-area: producto-4;
+    }
+    .producto-5 {
+        grid-area: producto-5;
+    }
+    .producto-6 {
+        grid-area: producto-6;
+    }
+    .producto-7 {
+        grid-area: producto-7;
+    }
+    .producto-8 {
+        grid-area: producto-8;
+    }
+
+    .img-tienda {
+        width: 55%;        
+    }
+    
+    #imgTiendaGrande {
+        width: 90%;
+    }
+
+    h2{
+        @include estilo-texto ($color-bordo, 25px, bold);
+       
+    }
+
+    h3{
+        font-size: 20px;        
+    }
+
+    a{
+        @extend %boton-link;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-auto-columns: 1fr;
+        grid-auto-flow: row;        
+        grid-template-areas:
+          "producto-1"
+          "producto-2"
+          "producto-3"
+          "producto-4"
+          "producto-5"
+          "producto-6"
+          "producto-7"
+          "producto-8";
+        
+          .producto-1 { grid-area: producto-1; }
+      
+          .producto-2 { grid-area: producto-2; }
+          
+          .producto-3 { grid-area: producto-3; }
+          
+          .producto-4 { grid-area: producto-4; }
+          
+          .producto-5 { grid-area: producto-5; }
+          
+          .producto-6 { grid-area: producto-6; }
+          
+          .producto-7 { grid-area: producto-7; }
+          
+          .producto-8 { grid-area: producto-8; }
+
+        .img-tienda{
+            width: 90%;
+        }
+
+        
+    }
+}
+

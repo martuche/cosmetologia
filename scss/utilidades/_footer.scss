@@ -1,0 +1,15 @@
+footer{
+    position: fixed;
+    bottom: 0;        
+    width: 100%;
+    background-color: $color-bordo;    
+    
+    .nav-link{
+        color: $color-claro;
+        font-family: $font-cuerpo;      
+
+        &:hover{
+            color: $color-fondo;
+        }
+    }
+}

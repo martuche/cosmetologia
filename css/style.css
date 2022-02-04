@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento&family=Ultra&display=swap");
+.btn, .grilla a, .entradas-blog a {
+  text-decoration: none;
+  color: #3A3238;
+  border: 1px solid #546CEC;
+  padding: 0.25rem; }
+  .btn:hover, .grilla a:hover, .entradas-blog a:hover {
+    font-weight: bold;
+    background-image: linear-gradient(126deg, #546CEC 0%, #C9D7F8 50%); }
+
+.exfoliacion {
+  color: #6E4555;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.derma {
+  color: #546CEC;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.acido {
+  color: #6E4555;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.acne {
+  color: #546CEC;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.radio {
+  color: #6E4555;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.micro {
+  color: #546CEC;
+  font-weight: bold;
+  text-decoration: underline; }
+
+body {
+  background-color: #C9D7F8;
+  margin-top: 118px;
+  margin-bottom: 100px; }
+  body .seccion-portada {
+    background-color: #6E4555; }
+    body .seccion-portada h1 {
+      font-family: "Ultra", serif;
+      color: #E1D89F; }
+
+@media (min-width: 768px) and (max-width: 2560px) {
+  .seccion-portada h1 {
+    text-align: end;
+    font-size: 80px; }
+  .seccion-portada .img-portada {
+    width: 65%; } }
+
+@media screen and (max-width: 768px) {
+  .seccion-portada h1 {
+    text-align: center;
+    font-size: 55px; }
+  .seccion-portada .img-portada {
+    width: 40%; } }
+
+nav {
+  background-color: #C9D7F8; }
+  nav .navbar-brand {
+    padding: 0;
+    height: 100px;
+    line-height: 100px;
+    font-family: "Quattrocento", serif;
+    font-weight: bold; }
+  nav .navbar-nav {
+    font-family: "Quattrocento", serif;
+    font-weight: bold; }
+    nav .navbar-nav .nav-item {
+      margin: 2px; }
+      nav .navbar-nav .nav-item .nav-link {
+        color: #3A3238; }
+        nav .navbar-nav .nav-item .nav-link:hover {
+          color: #546CEC; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #6E4555; }
+  footer .nav-link {
+    color: #E1D89F;
+    font-family: "Quattrocento", serif; }
+    footer .nav-link:hover {
+      color: #C9D7F8; }
+
+.img-principal {
+  width: 100%; }
+
+#titulo-inicio {
+  color: #6E4555;
+  font-family: "Ultra", serif;
+  font-size: 60px; }
+
+.texto-inicio {
+  text-align: end; }
+  .texto-inicio .fs-1 {
+    font-family: "Ultra", serif;
+    color: #3A3238; }
+  .texto-inicio .fs-3 {
+    font-family: "Quattrocento", serif;
+    color: #3A3238; }
+
+.img-inicio {
+  width: 60%; }
+
+#texto-productos {
+  text-align: start; }
+  #texto-productos .fs-1 {
+    font-family: "Ultra", serif;
+    color: #3A3238; }
+  #texto-productos .fs-3 {
+    font-family: "Quattrocento", serif;
+    color: #3A3238; }
+
+@media screen and (max-width: 768px) {
+  .img-principal {
+    width: 85%;
+    align-items: center; }
+  #titulo-inicio {
+    font-size: 40px;
+    text-align: center; }
+  .texto-inicio {
+    text-align: center; }
+  #texto-productos {
+    text-align: center; }
+  .img-inicio {
+    width: 60%; } }
+
+.edit-servicios {
+  font-family: "Quattrocento", serif;
+  margin: 3rem auto 5rem; }
+  .edit-servicios h2 {
+    color: #3A3238;
+    font-size: 40px;
+    font-weight: bold; }
+  .edit-servicios .edit-higiene {
+    width: 100%; }
+  .edit-servicios .edit-dermamicro {
+    width: 90%; }
+  .edit-servicios .edit-video {
+    width: 50%; }
+  .edit-servicios .edit-acne {
+    width: 50%; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "producto-1 producto-2 producto-3" "producto-4 producto-5 producto-3" "producto-6 producto-7 producto-8";
+  padding: 3rem;
+  font-family: "Quattrocento", serif;
+  align-items: center; }
+  .grilla .producto-1 {
+    grid-area: producto-1; }
+  .grilla .producto-2 {
+    grid-area: producto-2; }
+  .grilla .producto-3 {
+    grid-area: producto-3; }
+  .grilla .producto-4 {
+    grid-area: producto-4; }
+  .grilla .producto-5 {
+    grid-area: producto-5; }
+  .grilla .producto-6 {
+    grid-area: producto-6; }
+  .grilla .producto-7 {
+    grid-area: producto-7; }
+  .grilla .producto-8 {
+    grid-area: producto-8; }
+  .grilla .img-tienda {
+    width: 55%; }
+  .grilla #imgTiendaGrande {
+    width: 90%; }
+  .grilla h2 {
+    color: #6E4555;
+    font-size: 25px;
+    font-weight: bold; }
+  .grilla h3 {
+    font-size: 20px; }
+
+@media screen and (max-width: 768px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5" "producto-6" "producto-7" "producto-8"; }
+    .grilla .producto-1 {
+      grid-area: producto-1; }
+    .grilla .producto-2 {
+      grid-area: producto-2; }
+    .grilla .producto-3 {
+      grid-area: producto-3; }
+    .grilla .producto-4 {
+      grid-area: producto-4; }
+    .grilla .producto-5 {
+      grid-area: producto-5; }
+    .grilla .producto-6 {
+      grid-area: producto-6; }
+    .grilla .producto-7 {
+      grid-area: producto-7; }
+    .grilla .producto-8 {
+      grid-area: producto-8; }
+    .grilla .img-tienda {
+      width: 90%; } }
+
+.entradas-blog {
+  margin: 4rem;
+  font-family: "Quattrocento", serif;
+  color: #3A3238; }
+  .entradas-blog h2 {
+    color: #3A3238;
+    font-size: 25px;
+    font-weight: bold; }
+  .entradas-blog img {
+    border-radius: 40%; }
+
+.img-nosotras {
+  width: 70%;
+  border-radius: 10%; }
+
+@media screen and (max-width: 768px) {
+  .texto-nosotras {
+    text-align: center;
+    margin-top: 2rem; } }
+
+.edit-turnos-contacto {
+  border: solid 1px #546CEC;
+  color: #3A3238;
+  font-family: "Quattrocento", serif;
+  width: 40%;
+  margin: 2rem;
+  padding: 2rem; }
+  .edit-turnos-contacto h2 {
+    color: #6E4555;
+    font-size: 30px;
+    font-weight: bold; }
+
+.lugar {
+  border: solid 1px #546CEC;
+  color: #3A3238;
+  font-family: "Quattrocento", serif;
+  margin: 2rem;
+  padding: 2rem; }
+  .lugar h2 {
+    color: #6E4555;
+    font-size: 30px;
+    font-weight: bold; }
+  .lugar iframe {
+    width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .edit-turnos-contacto {
+    width: 80%; } }

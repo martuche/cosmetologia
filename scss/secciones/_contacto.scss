@@ -1,0 +1,38 @@
+.edit-turnos-contacto{
+    border: solid 1px $color-azul;
+    color: $color-texto;
+    font-family: $font-cuerpo;
+    width: 40%;
+    margin: 2rem;
+    padding: 2rem;
+
+    h2{
+        @include estilo-texto ($color-bordo, 30px, bold)
+        
+    }
+}
+
+.lugar{
+    border: solid 1px $color-azul;
+    color: $color-texto;   
+    font-family: $font-cuerpo; 
+    margin: 2rem;
+    padding: 2rem;
+
+    h2{
+        @include estilo-texto ($color-bordo, 30px, bold)
+        
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .edit-turnos-contacto{
+        width: 80%;
+    }
+
+
+}

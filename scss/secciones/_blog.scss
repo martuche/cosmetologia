@@ -1,0 +1,19 @@
+.entradas-blog{
+    margin: 4rem;  
+    font-family: $font-cuerpo;
+    color: $color-texto;
+
+    h2{
+        @include estilo-texto ($color-texto, 25px, bold)
+    }
+
+    img{
+        border-radius: 40%;
+    }
+
+
+    a{
+        @extend %boton-link;
+    }
+
+}

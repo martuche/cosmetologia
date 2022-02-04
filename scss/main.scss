@@ -1,0 +1,28 @@
+//VARIABLES (Siempre arriba)
+
+@import "./variables/colores";
+@import "./variables/fuentes";
+@import "./variables/extend";
+@import "./variables/mixin";
+@import "./variables/maps";
+
+//UTILIDADES
+
+@import "./utilidades/body";
+@import "./utilidades/header";
+@import "./utilidades/footer";
+
+
+//SECCIONES
+
+@import "./secciones/index";
+@import "./secciones/servicios";
+@import "./secciones/tienda";
+@import "./secciones/blog";
+@import "./secciones/nosotras";
+@import "./secciones/contacto";
+
+
+
+
+
