@@ -42,8 +42,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+                        <!-- Submenu -->
+                        <li class="nav-item submenu">
+                            <a class="nav-link" href="./secciones/servicios.html">Servicios<i
+                                    class="fas fa-sort-down"></i></a>
+                            <ul>
+                                <li><a href="#">Higiene Facial Profunda</a></li>
+                                <li><a href="#">Dermaplaning</a></li>
+                                <li><a href="#">Peeling</a></li>
+                                <li><a href="#">Tratamiento para el Acne</a></li>
+                                <li><a href="#">Radiofrecuencia</a></li>
+                                <li><a href="#">Microneedling</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./secciones/tienda.html">Tienda</a>
@@ -70,22 +80,24 @@
 
     <main class="container-fluid">
         <!-- Portada -->
-        <section class="row">
+        <section class="row portada-ppal">
             <div class="col-md-4 d-flex align-items-center">
-                <img src="./img/portada-inicio.jpg"
+                <img src="./img/portada-inicio.png"
                     class="mx-auto d-block img-fluid img-principal wow animate__animated animate__backInLeft"
                     alt="Imagen Principal">
             </div>
             <div class="col-md-8 align-self-center">
-                <h1 id="titulo-inicio">Cosmetología - Tomate el tiempo para hacer feliz a tu piel</h1>
+                <h1 id="titulo-inicio">COSMETOLOGIA</h1>
+                <span id="subtitulo-inicio">TOMATE EL TIEMPO PARA HACER FELIZ A TU PIEL</span>
             </div>
         </section>
         <!-- Contenido -->
         <section class="row mt-4 mb-4">
             <div class="col-md-7 align-self-center texto-inicio">
                 <p class="fs-1">Servicios</p>
-                <p class="fs-3">Nuestros tratamientos faciales son totalmente personalizados. Los valores se ven siempre actualizados en el catálogo del WhatsApp.</p>
-                <a href="/secciones/servicios.html"><button type="button" class="btn">Entrar</button></a>
+                <p class="fs-3">Nuestros tratamientos faciales son totalmente personalizados. Los valores se ven siempre
+                    actualizados en el catálogo del WhatsApp.</p>
+                <a href="/secciones/servicios.html"><button type="button" class="btn btn-borde">Entrar</button></a>
             </div>
             <div class="col-md-5 d-flex align-items-center">
                 <img src="./img/inicio-services.jpg"
@@ -101,7 +113,7 @@
             <div class="col-md-7 align-self-center" id="texto-productos">
                 <p class="fs-1">Productos</p>
                 <p class="fs-3">Encontrá tu producto ideal para tu rutina.</p>
-                <a href="/secciones/tienda.html"><button type="button" class="btn">Comprá ahora!</button></a>
+                <a href="/secciones/tienda.html"><button type="button" class="btn btn-borde">Comprá ahora!</button></a>
 
             </div>
         </section>
@@ -110,7 +122,7 @@
             <div class="col-md-7 align-self-center texto-inicio">
                 <p class="fs-1">Blog</p>
                 <p class="fs-3">Acá encontras todas las últimas tendencias de la cosmetología.</p>
-                <a href="/secciones/blog.html"><button type="button" class="btn">Leer más</button></a>
+                <a href="/secciones/blog.html"><button type="button" class="btn btn-borde">Leer más</button></a>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-start">
                 <img src="./img/inicio-blog.jpg"
@@ -121,6 +133,7 @@
     </main>
 
     <footer class="mt-auto py-3">
+        <i class="fa-brands fa-whatsapp"></i>
         <ul class="nav justify-content-center">
             <li class="nav-item ">
                 <a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a>

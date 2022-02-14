@@ -1,11 +1,26 @@
+.portada-ppal{
+    background-image: url(/img/30.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $color-fondo;
+    padding: 3rem;
+
+}
+
 .img-principal {
     width: 100%;
 }
 
 #titulo-inicio {
-    color: $color-bordo;
+    color: $color-texto;
     font-family: $font-titulo;
     font-size: 60px;
+    letter-spacing: 0.2rem;
+}
+
+#subtitulo-inicio{
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .texto-inicio {
@@ -41,7 +56,7 @@
 
 }
 
-.btn {
+.btn-borde {
     @extend %boton-link;
 }
 

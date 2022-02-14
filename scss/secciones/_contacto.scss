@@ -1,4 +1,11 @@
-.edit-turnos-contacto{
+.portada-contacto {
+    background-image: url(/img/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.edit-turnos-contacto {
     border: solid 1px $color-azul;
     color: $color-texto;
     font-family: $font-cuerpo;
@@ -6,31 +13,55 @@
     margin: 2rem;
     padding: 2rem;
 
-    h2{
-        @include estilo-texto ($color-bordo, 30px, bold)
-        
+    h2 {
+        @include estilo-texto ($color-bordo, 30px, normal);
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: $font-titulo;
+        letter-spacing: 0.2rem;
     }
+
+    .form-control,
+    #floatingSelect {
+        border: none;
+        border-bottom: solid 1px $color-azul;
+        background-color: $color-fondo;
+    }
+
+    .input-group-text {
+        background-color: $color-fondo;
+    }
+
+
+
+
+
+
+
 }
 
-.lugar{
+.lugar {
     border: solid 1px $color-azul;
-    color: $color-texto;   
-    font-family: $font-cuerpo; 
+    color: $color-texto;
+    font-family: $font-cuerpo;
     margin: 2rem;
     padding: 2rem;
 
-    h2{
-        @include estilo-texto ($color-bordo, 30px, bold)
-        
+    h2 {
+        @include estilo-texto ($color-bordo, 30px, bold);
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: $font-titulo;
+        letter-spacing: 0.2rem;
     }
 
-    iframe{
+    iframe {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .edit-turnos-contacto{
+    .edit-turnos-contacto {
         width: 80%;
     }
 

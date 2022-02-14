@@ -28,6 +28,41 @@ nav {
 
         }
 
+        .submenu {
+            position: relative;
+
+            ul {
+                position: absolute;
+                top: 2.5rem;
+                display: none;
+
+                li {
+                    display: block;
+                    font-size: 15px;
+                    background-color: $color-fondo;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+
+                    a {
+                        color: $color-texto;
+                        text-decoration: none;
+
+
+                        &:hover {
+                            color: $color-azul;
+                        }
+                    }
+
+                }
+            }
+
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+        }
+
     }
 
 
