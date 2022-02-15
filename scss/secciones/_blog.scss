@@ -6,6 +6,10 @@
 }
 
 .entradas-blog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 4rem;  
     font-family: $font-cuerpo;
     color: $color-texto;
