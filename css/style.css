@@ -82,8 +82,6 @@ nav {
           color: #546CEC; }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: #6E4555; }
   footer .nav-link {
@@ -157,7 +155,9 @@ footer {
   grid-template-rows: repeat(3, 1fr);
   gap: 15px 5px;
   grid-auto-flow: row;
-  grid-template-areas: "producto-1 producto-2 producto-3" "producto-4 producto-5 producto-3" "producto-6 producto-7 producto-8";
+  grid-template-areas: "producto-1 producto-2 producto-3"
+ "producto-4 producto-5 producto-3"
+ "producto-6 producto-7 producto-8";
   padding: 3rem;
   font-family: "Quattrocento", serif;
   align-items: center; }
@@ -195,7 +195,14 @@ footer {
     grid-template-rows: repeat(8, 1fr);
     grid-auto-columns: 1fr;
     grid-auto-flow: row;
-    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5" "producto-6" "producto-7" "producto-8"; }
+    grid-template-areas: "producto-1"
+ "producto-2"
+ "producto-3"
+ "producto-4"
+ "producto-5"
+ "producto-6"
+ "producto-7"
+ "producto-8"; }
     .grilla .producto-1 {
       grid-area: producto-1; }
     .grilla .producto-2 {
