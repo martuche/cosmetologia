@@ -82,6 +82,8 @@ nav {
           color: #546CEC; }
 
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-color: #6E4555; }
   footer .nav-link {
