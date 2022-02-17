@@ -1,18 +1,26 @@
 footer{         
-    width: 100%;
     background-color: $color-bordo;    
+    padding: 2.5rem;
 
-    .fa-whatsapp{
-        font-size: 2rem;
-        color: white;
-        background-color: green;
-        padding: 0.6rem;
-        border-radius: 50%;
-        position: fixed;
-        bottom: 5%;
-        right: 3%;
-    }
-    
+    .texto-footer{
+        color: $color-claro;
+        font-family: $font-cuerpo;
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+
+        h5{
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    }       
     .nav-link{
         color: $color-claro;
         font-family: $font-cuerpo;      
@@ -21,4 +29,9 @@ footer{
             color: $color-fondo;
         }
     }
+}
+
+@media screen and (max-width: 1200px){
+    
+
 }

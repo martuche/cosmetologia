@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Link de Font-Awesome -->
     <script src="https://kit.fontawesome.com/dc1ecb4f56.js" crossorigin="anonymous"></script>
+    <!-- Link de Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Link de Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Favicon -->
@@ -69,134 +71,166 @@
         </nav>
     </header>
 
-    <main class="container-fluid">
-        <!-- Portada -->
-        <section class="row seccion-portada portada-blog">
-            <div class="col-md-8 align-self-center">
-                <h1>Blog</h1>
-            </div>
-            <div class="col-md-4 d-flex align-items-center">
-                <img src="../img/portada-blog.png"
-                    class="mx-auto d-block img-fluid img-portada wow animate__animated animate__headShake"
-                    alt="Portada de blog">
-            </div>
-        </section>
-
-         <!--  Search -->
-        
-        <section class="row">            
-            <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
-  </div>
-</nav>
+    <main>
+        <div class="container-fluid">
+            <!-- Portada -->
+            <section class="row seccion-portada portada-blog">
+                <div class="col-md-8 align-self-center">
+                    <h1>Blog</h1>
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="../img/portada-blog.png"
+                        class="mx-auto d-block img-fluid img-portada wow animate__animated animate__headShake"
+                        alt="Portada de blog">
+                </div>
             </section>
-        
-        <!--  Entradas de blog -->
-        
-        <section class="entradas-blog">          
 
-            <article>                
-                        <img src="../img/suncare.jpg" alt="Protector Solar" class="img-blog">
-                        <h2>Usar protector solar a diario previene y revierte el fotoenvejecimiento</h2>
-                        <div>Ene 25, 2022</div>
-                        <p>Cuidarse del sol es el mejor antiage del mercado. Conocé las diferencias encontradas en dos estudios realizados
-                            en Australia y Estados Unidos entre el uso diario de protección solar y el uso a discreción o "cuando parece ser necesario".
-                        </p>
-                        <a href="#" class="btn-borde">Seguir leyendo</a>                 
-               
+            <!--  Search -->
+
+            <section class="row mt-5">
+                <nav class="navbar nav-search">
+                    <div class="container-fluid justify-content-center">
+                        <form class="d-flex">
+                            <input class="form-control me-2 form-search" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-search" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </section>
+
+        </div>
+
+        <!--  Entradas de blog -->
+
+        <section class="contenedor">
+            <article class="entrada-blog">
+                <img src="../img/suncare.jpg" alt="Protector Solar" class="img-blog">
+                <h2>Usar protector solar a diario previene y revierte el fotoenvejecimiento</h2>
+                <div>Ene 25, 2022</div>
+                <p class="parrafo">Cuidarse del sol es el mejor antiage del mercado. Conocé las diferencias encontradas
+                    en dos estudios realizados en Australia y Estados Unidos entre el uso diario de protección solar y
+                    el uso a discreción o "cuando parece ser necesario".</p>
+                <a href="#" class="btn-borde">Seguir leyendo</a>
+
             </article>
-            <article>               
-                        <img src="../img/vitaminac.jpg" alt="Vitamina C" class="img-blog">
-                        <h2>La Vitamina C, la reina para conseguir una piel radiante</h2>
-                        <div>Ene 16, 2022</div>
-                        <p>Hablemos de las bondades de la vitamina C de uso tópico para empezar el día.</p>
-                        <a href="#" class="btn-borde">Seguir leyendo</a>
-                    
+            <article class="entrada-blog">
+                <img src="../img/vitaminac.jpg" alt="Vitamina C" class="img-blog">
+                <h2>La Vitamina C, la reina para conseguir una piel radiante</h2>
+                <div>Ene 16, 2022</div>
+                <p>Hablemos de las bondades de la vitamina C de uso tópico para empezar el día.</p>
+                <a href="#" class="btn-borde">Seguir leyendo</a>
+
             </article>
-            <article>               
-                        <img src="../img/h2o.jpg" alt="Hidratación" class="img-blog">
-                        <h2>¿Por qué es tan importante la hidratación en la piel?</h2>
-                        <div>Ene 10, 2022</div>
-                        <p>La hidratación de la piel parece a veces un paso demasiado básico en la rutina de skincare y puede quedar opacado 
-                            por el uso de otros productos, ¡pero es mucho más imprescindible de lo que parece! En este post conocé por qué es importante 
-                            hidratar la piel y qué ingredientes buscar (y cuáles evitar) en los productos hidratantes.</p>
-                        <a href="#" class="btn-borde">Seguir leyendo</a>
-                   
+            <article class="entrada-blog">
+                <img src="../img/h2o.jpg" alt="Hidratación" class="img-blog">
+                <h2>¿Por qué es tan importante la hidratación en la piel?</h2>
+                <div>Ene 10, 2022</div>
+                <p>La hidratación de la piel parece a veces un paso demasiado básico en la rutina de skincare y
+                    puede
+                    quedar opacado
+                    por el uso de otros productos, ¡pero es mucho más imprescindible de lo que parece! En este post
+                    conocé por qué es importante
+                    hidratar la piel y qué ingredientes buscar (y cuáles evitar) en los productos hidratantes.</p>
+                <a href="#" class="btn-borde">Seguir leyendo</a>
             </article>
-            <article>                
-                        <img src="../img/deporte.jpg" alt="Deporte" class="img-blog">
-                        <h2>Deporte: sus efectos en la piel</h2>
-                        <div>Ene 25, 2022</div>
-                        <p>Son bien conocidos los beneficios de la actividad física para la salud. Varios expertos nos lo explican.
-                            Plus: Cómo cuidar la piel del rostro antes, durante y después de practicar ejercicio al aire libre
-                        </p>
-                        <a href="#" class="btn-borde">Seguir leyendo</a>                 
-               
+            <article class="entrada-blog">
+                <img src="../img/deporte.jpg" alt="Deporte" class="img-blog">
+                <h2>Deporte: sus efectos en la piel</h2>
+                <div>Ene 03, 2022</div>
+                <p>Son bien conocidos los beneficios de la actividad física para la salud. Varios expertos nos lo
+                    explican.
+                    Plus: Cómo cuidar la piel del rostro antes, durante y después de practicar ejercicio al aire
+                    libre
+                </p>
+                <a href="#" class="btn-borde">Seguir leyendo</a>
             </article>
-            <article>                
-                        <img src="../img/rutina.jpg" alt="Rutina" class="img-blog">
-                        <h2>La rutina en 4 pasos: ¡Guía completa para armarla!</h2>
-                        <div>Ene 25, 2022</div>
-                        <p>Conocé los 4 pasos fundamentales de toda rutina de skincare: Limpiador + Tratamientos + Hidratante + Protector solar de amplio espectro.</p>
-                        <a href="#" class="btn-borde">Seguir leyendo</a>                 
-               
+            <article class="entrada-blog">
+                <img src="../img/rutina.jpg" alt="Rutina" class="img-blog">
+                <h2>La rutina en 4 pasos: ¡Guía completa para armarla!</h2>
+                <div>Dic 16, 2021</div>
+                <p>Conocé los 4 pasos fundamentales de toda rutina de skincare: Limpiador + Tratamientos +
+                    Hidratante +
+                    Protector solar de amplio espectro.</p>
+                <a href="#" class="btn-borde">Seguir leyendo</a>
             </article>
-            <article>                
-                        <img src="../img/alimentacion.jpg" alt="Alimentacion" class="img-blog">
-                        <h2>¿La alimentación influye en la piel?</h2>
-                        <div>Ene 25, 2022</div>
-                        <p>Lo que comemos tiene mucho que ver en el bienestar cutáneo, desde la aparición de acné hasta el envejecimiento prematuro.</p>
-                        <a href="#" class="btn-borde">Seguir leyendo</a>                 
-               
+            <article class="entrada-blog">
+                <img src="../img/alimentacion.jpg" alt="Alimentacion" class="img-blog">
+                <h2>¿La alimentación influye en la piel?</h2>
+                <div>Dic 13, 2021</div>
+                <p>Lo que comemos tiene mucho que ver en el bienestar cutáneo, desde la aparición de acné hasta el
+                    envejecimiento prematuro.</p>
+                <a href="#" class="btn-borde">Seguir leyendo</a>
             </article>
         </section>
-        
+
+
         <!--  Pagination -->
-        
-        <section class="row"> 
-            
-        <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link">Anterior</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Siguiente</a>
-    </li>
-  </ul>
-</nav>
-                        </section>
+        <div class="container-fluid">
+            <section class="row">
+                <nav aria-label="Page navigation example" class="nav-blog">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Siguiente</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
 
 
-
+        </div>
 
 
 
     </main>
 
-    <footer class="mt-auto py-3">
-        <ul class="nav justify-content-center">
-            <li class="nav-item ">
-                <a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.twitter.com/" target="_blank">Twitter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#arriba">Ir arriba</a>
-            </li>
-        </ul>
-
+    <footer class="container-fluid">
+        <div class="row texto-footer">
+            <div class="col-md-4 col-xl-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank" alt="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank" alt="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.twitter.com/" target="_blank" alt="Facebook"><i
+                                class="bi bi-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Horarios</h5>
+                <ul>
+                    <li>Lunes a Viernes</li>
+                    <li>07 a 13 hs</li>
+                    <li>17 a 22 hs</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Whatsapp</h5>
+                <span>1161663181</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>E-mail</h5>
+                <span>cosmetologiamqm@gmail.com</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Ubicacion</h5>
+                <span>Barrio Caballito, CABA</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <a class="nav-link" href="#arriba">Ir arriba <i class="bi bi-arrow-up"></i></a>
+            </div>
+        </div>
     </footer>
     <!-- Link JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
