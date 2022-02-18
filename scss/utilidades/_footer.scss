@@ -1,9 +1,26 @@
-footer{
-    position: fixed;
-    bottom: 0;        
-    width: 100%;
+footer{         
     background-color: $color-bordo;    
-    
+    padding: 2.5rem;
+
+    .texto-footer{
+        color: $color-claro;
+        font-family: $font-cuerpo;
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+
+        h5{
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    }       
     .nav-link{
         color: $color-claro;
         font-family: $font-cuerpo;      
@@ -12,4 +29,9 @@ footer{
             color: $color-fondo;
         }
     }
+}
+
+@media screen and (max-width: 1200px){
+    
+
 }

@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Link de Font-Awesome -->
     <script src="https://kit.fontawesome.com/dc1ecb4f56.js" crossorigin="anonymous"></script>
+    <!-- Link de Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Link de Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Favicon -->
@@ -69,19 +71,30 @@
 
     <main class="container-fluid">
         <!-- Portada -->
-        <section class="row seccion-portada">
+        <section class="row seccion-portada portada-nosotras">
             <div class="col-md-8 align-self-center">
-                <h1>Nosotras</h1>
+                <h1 class="text-shadow-pop-tr">Nosotras</h1>
             </div>
             <div class="col-md-4 d-flex align-items-center">
-                <img src="../img/portada-nosotras.jpg"
+                <img src="../img/portada-nosotras.png"
                     class="mx-auto d-block img-fluid img-portada wow animate__animated animate__headShake"
                     alt="Portada de nosotras">
             </div>
         </section>
 
         <!--  Presentacion -->
-
+        
+        <div class="row">
+            <p class="col-md-5">Nuestro equipo está compuesto por un grupo de profesionales cosmetólogas y cosmiatras que brindan una atención personalizada y con conocimiento integral
+                de todos los tratamientos disponibles para cuidar la salud de la piel y mejorar su aspecto. Contamos con la última tecnología en equipos de tratamientos
+                no-quirúrgicos no invasivos que son tendencia a nivel mundial. Esto nos permite anticiparnos al futuro y mejorar el paso del tiempo.
+                Nuestro gabinete se encuentra ubicado en el corazón del barrio de Caballito. Cuenta con 2 pisos y amplio espacio cumpliendo todos los protocolos sanitarios.
+            </p>
+            <div class="col-md-7">
+                <img src="..." alt="Foto del gabinete" class="img-fluid">
+            </div>                
+        </div>
+                
         <section class="row mt-5">
             <div class="col-md-6 d-flex justify-content-center">
                 <img src="../img/us1.jpg" alt="Foto de Alicia Fernandez"
@@ -89,7 +102,15 @@
             </div>
             <div class="col-md-6 align-self-center texto-nosotras">
                 <h2>Alicia Fernandez</h2>
-                <p>Descripcion</p>
+                <p>
+                    <ul>
+                        <li>Cosmetología. 2002</li>
+                        <li>Especialista en Química Cosmética y Biología aplicada a la estética.</li>
+                        <li>Cosmetóloga Hospitalaria.</li>
+                        <li>Docente de la Tecnicatura en Cosmetología Facial y Corporal de la Universidad de Buenos Aires.</li>
+                        <li>Profesora de Cosmetología, Masoterapia y Maquillaje.</li>
+                </ul>
+                </p>             
             </div>
         </section>
         <section class="row mt-5">
@@ -99,35 +120,69 @@
             </div>
             <div class="col-md-6 align-self-center texto-nosotras">
                 <h2>Patricia Lopez</h2>
-                <p>Descripcion</p>
+                <p>
+                    <ul>
+                        <li>Cosmetología. 2005</li>
+                        <li>Esteticista corporal. 2006</li>
+                        <li>20 años de Experiencia Profesional</li>
+                        <li>Miembro adjunto de la AAD (Asociación Argentina de Dermatología)</li>
+                        <li>Máster en Cosmiatría Superior (Universidad de Buenos Aires)</li>
+                        <li>Disertante para laboratorios Nacionales.</li>
+                </ul>
+                </p>
             </div>
         </section>
 
     </main>
 
-    <footer class="mt-auto py-3">
-        <ul class="nav justify-content-center">
-            <li class="nav-item ">
-                <a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.twitter.com/" target="_blank">Twitter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#arriba">Ir arriba</a>
-            </li>
-        </ul>
-
+    <footer class="container-fluid">
+        <div class="row texto-footer">
+            <div class="col-md-4 col-xl-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank" alt="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank" alt="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.twitter.com/" target="_blank" alt="Facebook"><i class="bi bi-twitter"></i></a>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Horarios</h5>
+                <ul>
+                    <li>Lunes a Viernes</li>
+                    <li>07 a 13 hs</li>
+                    <li>17 a 22 hs</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Whatsapp</h5>
+                <span>1161663181</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>E-mail</h5>
+                <span>cosmetologiamqm@gmail.com</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Ubicacion</h5>
+                <span>Barrio Caballito, CABA</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <a class="nav-link" href="#arriba">Ir arriba <i class="bi bi-arrow-up"></i></a>
+            </div>
+        </div>
     </footer>
     <!-- Link JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <!-- Link JS wow.js -->
-    <script src="./js/wow.js"></script>
+    <script src="../js/wow.js"></script>
     <script>
         new WOW().init();
     </script>

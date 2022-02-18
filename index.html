@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Link de Font-Awesome -->
     <script src="https://kit.fontawesome.com/dc1ecb4f56.js" crossorigin="anonymous"></script>
+    <!-- Link de Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Link de Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Favicon -->
@@ -42,8 +44,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+                        <!-- Submenu -->
+                        <li class="nav-item submenu">
+                            <a class="nav-link" href="./secciones/servicios.html">Servicios<i
+                                    class="fas fa-sort-down"></i></a>
+                            <ul>
+                                <li><a href="#">Higiene Facial Profunda</a></li>
+                                <li><a href="#">Dermaplaning</a></li>
+                                <li><a href="#">Peeling</a></li>
+                                <li><a href="#">Tratamiento para el Acne</a></li>
+                                <li><a href="#">Radiofrecuencia</a></li>
+                                <li><a href="#">Microneedling</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./secciones/tienda.html">Tienda</a>
@@ -70,73 +82,201 @@
 
     <main class="container-fluid">
         <!-- Portada -->
-        <section class="row">
+        <section class="row portada-ppal">
             <div class="col-md-4 d-flex align-items-center">
-                <img src="./img/portada-inicio.jpg"
+                <img src="./img/portada-inicio.png"
                     class="mx-auto d-block img-fluid img-principal wow animate__animated animate__backInLeft"
                     alt="Imagen Principal">
             </div>
             <div class="col-md-8 align-self-center">
-                <h1 id="titulo-inicio">Cosmetología - Tomate el tiempo para hacer feliz a tu piel</h1>
+                <h1 class="titulo-inicio tracking-in-contract">COSMETOLOGIA</h1>
+                <span class="subtitulo-inicio tracking-in-contract">TOMATE EL TIEMPO PARA HACER FELIZ A TU PIEL</span>
             </div>
         </section>
+
         <!-- Contenido -->
-        <section class="row mt-4 mb-4">
-            <div class="col-md-7 align-self-center texto-inicio">
-                <p class="fs-1">Servicios</p>
-                <p class="fs-3">Nuestros tratamientos faciales son totalmente personalizados. Los valores se ven siempre actualizados en el catálogo del WhatsApp.</p>
-                <a href="/secciones/servicios.html"><button type="button" class="btn">Entrar</button></a>
+
+        <section class="row">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/inicio-slide4.jpg" class="d-block w-100" alt="Chica acariciando un conejo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NO TESTEAMOS EN ANIMALES</h5>
+                            <p>No trabajamos con productos testeados en animales. Elegimos la alternativa que
+                                consideramos más ética y seleccionamos productos
+                                de laboratorios especializados en hacer pruebas clínicas y dermatológicas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/inicio-slide2.jpg" class="d-block w-100" alt="Chica utilizando la notebook">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>CONSULTAS ONLINE</h5>
+                            <p>Agendá una consulta con nosotras totalmente online. Vas a poder conocer tu diagnóstico y
+                                los pasos a seguir para comenzar tu tratamiento.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/inicio-slide3.jpg" class="d-block w-100" alt="Cama">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>¿BUSCÁS LA PIEL DE TUS SUEÑOS? ¡CÓMO DORMIMOS AFECTA A LA PIEL!</h5>
+                            <p>La falta de sueño también causa alteraciones en la piel. Acelera el envejecimiento,
+                                debilita la función de barrera, causa deshidratación,
+                                deja la piel más sensible al daño y genera una auto-percepción menos favorable</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="col-md-5 d-flex align-items-center">
-                <img src="./img/inicio-services.jpg"
+        </section>
+
+
+        <section class="row my-4 mx-5">
+            <div class="col-md-6 align-self-center texto-inicio">
+                <p class="fs-1">Servicios</p>
+                <p class="fs-3">Los tratamientos de nuestro centro para el rostro son procedimientos no invasivos
+                    llevados a cabo por profesionales
+                    que aplican las técnicas adecuadas para mejorar el aspecto de la piel. Los tratamientos faciales son
+                    totalmente personalizados que incluyen el atenuamiento de arrugas y
+                    cicatrices, y combatan a la deshidratación, grasitud, acné, flacidez, rosácea y otras patologías de
+                    la piel. Cuidamos de tu piel y te ayudamos a seguir una
+                    rutina para un correcto mantenimiento del rostro.</p>
+                <a href="./secciones/servicios.html"><button type="button" class="btn btn-borde">Entrar</button></a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="./img/inicio-services2.jpg"
                     class="mx-auto d-block img-fluid img-inicio wow animate__animated animate__zoomIn " alt="Servicios">
             </div>
         </section>
 
-        <section class="row mt-4 mb-4">
-            <div class="col-md-5 d-flex align-items-center justify-content-end">
-                <img src="./img/inicio- products.jpg"
+        <section class="row my-4 mx-5">
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+                <img src="./img/inicio- products2.jpg"
                     class="mx-auto d-block img-fluid img-inicio wow animate__animated animate__zoomIn" alt="Tienda">
             </div>
-            <div class="col-md-7 align-self-center" id="texto-productos">
+            <div class="col-md-6 align-self-center" id="texto-productos">
                 <p class="fs-1">Productos</p>
-                <p class="fs-3">Encontrá tu producto ideal para tu rutina.</p>
-                <a href="/secciones/tienda.html"><button type="button" class="btn">Comprá ahora!</button></a>
+                <p class="fs-3"> Nuestra selección de accesorios y herramientas de belleza de excelente calidad,
+                    convertí tu casa en tu spa! </p>
+                <a href="./secciones/tienda.html"><button type="button" class="btn btn-borde">Comprá ahora!</button></a>
 
             </div>
         </section>
 
-        <section class="row mt-4 mb-4">
-            <div class="col-md-7 align-self-center texto-inicio">
+        <section class="row my-4 mx-5">
+            <div class="col-md-6 align-self-center texto-inicio">
                 <p class="fs-1">Blog</p>
-                <p class="fs-3">Acá encontras todas las últimas tendencias de la cosmetología.</p>
-                <a href="/secciones/blog.html"><button type="button" class="btn">Leer más</button></a>
+                <p class="fs-3">Todas las novedades beauty, secretos de belleza, tendencias de tratamientos faciales,
+                    salud al día y muchos tips que te sacarán de apuro.
+                    Incluimos información a través de fuentes científicas sobre químicos y cosméticos.</p>
+                <a href="./secciones/blog.html"><button type="button" class="btn btn-borde">Leer más</button></a>
             </div>
-            <div class="col-md-5 d-flex align-items-center justify-content-start">
-                <img src="./img/inicio-blog.jpg"
+            <div class="col-md-6 d-flex align-items-center justify-content-start">
+                <img src="./img/inicio-blog2.jpg"
                     class="mx-auto d-block img-fluid img-inicio wow animate__animated animate__zoomIn" alt="Blog">
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section>
+            <div>
+                <p class="titulo-opiniones">186 Opiniones de nuestros clientes.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <h2>Daniela T.</h2>
+                                <span>04/02/2022</span>
+                                <p>“Excelente! Todo súper calmo y adecuado a cualquier tratamiento que te quieras hacer.
+                                    Lo
+                                    recomiendo 100%"</p>
+                            </div>
+                            <div>
+                                <h2>Macarena G.</h2>
+                                <span>04/02/2022</span>
+                                <p>“Las chicas que atienden son de lo más dulces. Y el centro tiene unos tratamientos
+                                    súper
+                                    completos y eficaces. Estoy Feliz de haberlos encontrado!”</p>
+                            </div>
+                            <div>
+                                <h2>Patricio J.</h2>
+                                <span>04/02/2022</span>
+                                <p>"La mejor atención y calidad en productos."</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/testimonios.jpg" alt="Dos chicas compartiendo frutas" class="img-fluid">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="mt-auto py-3">
-        <ul class="nav justify-content-center">
-            <li class="nav-item ">
-                <a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.twitter.com/" target="_blank">Twitter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#arriba">Ir arriba</a>
-            </li>
-        </ul>
-
+    <footer class="container-fluid">
+        <div class="row texto-footer">
+            <div class="col-md-4 col-xl-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank" alt="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank" alt="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.twitter.com/" target="_blank" alt="Facebook"><i
+                                class="bi bi-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Horarios</h5>
+                <ul>
+                    <li>Lunes a Viernes</li>
+                    <li>07 a 13 hs</li>
+                    <li>17 a 22 hs</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Whatsapp</h5>
+                <span>1161663181</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>E-mail</h5>
+                <span>cosmetologiamqm@gmail.com</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <h5>Ubicacion</h5>
+                <span>Barrio Caballito, CABA</span>
+            </div>
+            <div class="col-md-4 col-xl-2">
+                <a class="nav-link" href="#arriba">Ir arriba <i class="bi bi-arrow-up"></i></a>
+            </div>
+        </div>
     </footer>
+
+
     <!-- Link JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento&family=Ultra&display=swap");
-.btn, .grilla a, .entradas-blog a {
+* {
+  margin: 0;
+  padding: 0; }
+
+.btn-borde, .grilla .btn-borde, .contenedor .entrada-blog .btn-borde {
   text-decoration: none;
   color: #3A3238;
   border: 1px solid #546CEC;
   padding: 0.25rem; }
-  .btn:hover, .grilla a:hover, .entradas-blog a:hover {
+  .btn-borde:hover, .contenedor .entrada-blog .btn-borde:hover {
     font-weight: bold;
     background-image: linear-gradient(126deg, #546CEC 0%, #C9D7F8 50%); }
 
@@ -41,13 +45,34 @@
 
 body {
   background-color: #C9D7F8;
-  margin-top: 118px;
-  margin-bottom: 100px; }
-  body .seccion-portada {
-    background-color: #6E4555; }
-    body .seccion-portada h1 {
-      font-family: "Ultra", serif;
-      color: #E1D89F; }
+  margin-top: 118px; }
+  body h1 {
+    font-family: "Ultra", serif;
+    color: #E1D89F;
+    text-shadow: 5px -2px 2px rgba(0, 0, 0, 0.6); }
+  body .text-shadow-pop-tr {
+    -webkit-animation: text-shadow-pop-tr 0.6s both;
+    animation: text-shadow-pop-tr 0.6s both; }
+
+@-webkit-keyframes text-shadow-pop-tr {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    text-shadow: 1px -1px #555555, 2px -2px #555555, 3px -3px #555555, 4px -4px #555555, 5px -5px #555555, 6px -6px #555555, 7px -7px #555555, 8px -8px #555555;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px); } }
+
+@keyframes text-shadow-pop-tr {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    text-shadow: 1px -1px #555555, 2px -2px #555555, 3px -3px #555555, 4px -4px #555555, 5px -5px #555555, 6px -6px #555555, 7px -7px #555555, 8px -8px #555555;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px); } }
 
 @media (min-width: 768px) and (max-width: 2560px) {
   .seccion-portada h1 {
@@ -80,25 +105,93 @@ nav {
         color: #3A3238; }
         nav .navbar-nav .nav-item .nav-link:hover {
           color: #546CEC; }
+    nav .navbar-nav .submenu {
+      position: relative; }
+      nav .navbar-nav .submenu ul {
+        position: absolute;
+        top: 2.5rem;
+        display: none; }
+        nav .navbar-nav .submenu ul li {
+          display: block;
+          font-size: 15px;
+          background-color: #C9D7F8;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem; }
+          nav .navbar-nav .submenu ul li a {
+            color: #3A3238;
+            text-decoration: none; }
+            nav .navbar-nav .submenu ul li a:hover {
+              color: #546CEC; }
+      nav .navbar-nav .submenu:hover ul {
+        display: block; }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #6E4555; }
+  background-color: #6E4555;
+  padding: 2.5rem; }
+  footer .texto-footer {
+    color: #E1D89F;
+    font-family: "Quattrocento", serif;
+    font-size: 15px;
+    text-align: center;
+    align-items: center; }
+    footer .texto-footer h5 {
+      text-decoration: underline;
+      font-size: 20px; }
+    footer .texto-footer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
   footer .nav-link {
     color: #E1D89F;
     font-family: "Quattrocento", serif; }
     footer .nav-link:hover {
       color: #C9D7F8; }
 
-.img-principal {
-  width: 100%; }
+.portada-ppal {
+  background-image: url(../../img/22.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #C9D7F8;
+  padding: 3rem; }
+  .portada-ppal .img-principal {
+    width: 100%; }
+  .portada-ppal .tracking-in-contract {
+    -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
-#titulo-inicio {
-  color: #6E4555;
-  font-family: "Ultra", serif;
-  font-size: 60px; }
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+  .portada-ppal .titulo-inicio {
+    color: #3A3238;
+    font-family: "Ultra", serif;
+    font-size: 60px;
+    letter-spacing: 0.2rem; }
+  .portada-ppal .subtitulo-inicio {
+    font-size: 60px;
+    font-weight: bold; }
+
+.carousel-item {
+  height: 500px; }
+  .carousel-item img {
+    object-fit: cover;
+    max-height: 500px; }
 
 .texto-inicio {
   text-align: end; }
@@ -135,6 +228,12 @@ footer {
   .img-inicio {
     width: 60%; } }
 
+.portada-servicios {
+  background-image: url(../../img/02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem; }
+
 .edit-servicios {
   font-family: "Quattrocento", serif;
   margin: 3rem auto 5rem; }
@@ -151,15 +250,22 @@ footer {
   .edit-servicios .edit-acne {
     width: 50%; }
 
+.portada-tienda {
+  background-image: url(../../img/03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem; }
+
 .grilla {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 15px 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px 15px;
+  margin: 2rem;
   grid-auto-flow: row;
   grid-template-areas: "producto-1 producto-2 producto-3"
- "producto-4 producto-5 producto-3"
- "producto-6 producto-7 producto-8";
+ "producto-4 producto-5 producto-6"
+ "producto-7 producto-8 producto-9";
   padding: 3rem;
   font-family: "Quattrocento", serif;
   align-items: center; }
@@ -179,16 +285,21 @@ footer {
     grid-area: producto-7; }
   .grilla .producto-8 {
     grid-area: producto-8; }
+  .grilla .producto-9 {
+    grid-area: producto-9; }
   .grilla .img-tienda {
-    width: 55%; }
-  .grilla #imgTiendaGrande {
-    width: 90%; }
+    width: 55%;
+    display: block;
+    margin: auto; }
   .grilla h2 {
     color: #6E4555;
     font-size: 25px;
     font-weight: bold; }
   .grilla h3 {
     font-size: 20px; }
+  .grilla .btn-borde {
+    display: block;
+    text-align: center; }
 
 @media screen and (max-width: 768px) {
   .grilla {
@@ -204,7 +315,9 @@ footer {
  "producto-5"
  "producto-6"
  "producto-7"
- "producto-8"; }
+ "producto-8"
+ "producto-9";
+    justify-content: center; }
     .grilla .producto-1 {
       grid-area: producto-1; }
     .grilla .producto-2 {
@@ -221,28 +334,95 @@ footer {
       grid-area: producto-7; }
     .grilla .producto-8 {
       grid-area: producto-8; }
+    .grilla .producto-9 {
+      grid-area: producto-9; }
     .grilla .img-tienda {
       width: 90%; } }
 
-.entradas-blog {
-  margin: 4rem;
-  font-family: "Quattrocento", serif;
-  color: #3A3238; }
-  .entradas-blog h2 {
-    color: #3A3238;
-    font-size: 25px;
-    font-weight: bold; }
-  .entradas-blog img {
-    border-radius: 40%; }
+.portada-blog {
+  background-image: url(../../img/14.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem; }
+
+.nav-search {
+  background-color: #C9D7F8; }
+  .nav-search .form-search {
+    background-color: #C9D7F8;
+    border: #546CEC solid 1px; }
+  .nav-search .btn-search {
+    background-color: #546CEC;
+    color: #E1D89F; }
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem; }
+  .contenedor .entrada-blog {
+    width: 30%;
+    margin-bottom: 1rem; }
+    .contenedor .entrada-blog .img-blog {
+      width: 100%; }
+      .contenedor .entrada-blog .img-blog:hover {
+        opacity: 0.5; }
+    .contenedor .entrada-blog .titulo-blog {
+      color: #3A3238;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none; }
+      .contenedor .entrada-blog .titulo-blog:hover {
+        color: #546CEC; }
+
+.nav-blog {
+  background-color: #C9D7F8;
+  margin-bottom: 2rem; }
+  .nav-blog .page-item {
+    background: #C9D7F8; }
+    .nav-blog .page-item .page-link {
+      background-color: #C9D7F8;
+      border: #546CEC solid 1px; }
+      .nav-blog .page-item .page-link:hover {
+        background-color: #546CEC;
+        color: #E1D89F; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedor .entrada-blog {
+      width: 90%; } }
+
+.portada-nosotras {
+  background-image: url(../../img/07.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem; }
 
 .img-nosotras {
   width: 70%;
-  border-radius: 10%; }
+  border-radius: 10%;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @media screen and (max-width: 768px) {
   .texto-nosotras {
     text-align: center;
     margin-top: 2rem; } }
+
+.portada-contacto {
+  background-image: url(../../img/7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem; }
 
 .edit-turnos-contacto {
   border: solid 1px #546CEC;
@@ -254,7 +434,18 @@ footer {
   .edit-turnos-contacto h2 {
     color: #6E4555;
     font-size: 30px;
-    font-weight: bold; }
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Ultra", serif;
+    letter-spacing: 0.2rem; }
+  .edit-turnos-contacto .form-control,
+  .edit-turnos-contacto #floatingSelect {
+    border: none;
+    border-bottom: solid 1px #546CEC;
+    background-color: #C9D7F8; }
+  .edit-turnos-contacto .input-group-text {
+    background-color: #C9D7F8; }
 
 .lugar {
   border: solid 1px #546CEC;
@@ -265,7 +456,11 @@ footer {
   .lugar h2 {
     color: #6E4555;
     font-size: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Ultra", serif;
+    letter-spacing: 0.2rem; }
   .lugar iframe {
     width: 100%; }
 
