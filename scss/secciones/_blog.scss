@@ -23,18 +23,29 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 6rem;
+    margin: 4rem;
 
     .entrada-blog {
         width: 30%;
+        margin-bottom: 1rem;
 
         .img-blog {
             width: 100%;
+
+            &:hover{
+                opacity: 0.5            
+            }
         }
 
-        h2 {
-            @include estilo-texto ($color-texto, 25px, bold)
+        .titulo-blog{
+            @include estilo-texto ($color-texto, 25px, bold);
+            text-decoration: none;
+
+            &:hover{
+                color: $color-azul;
+            }
         }
+
 
         .btn-borde {
             @extend %boton-link;
@@ -44,6 +55,7 @@
 
 .nav-blog{
     background-color: $color-fondo; 
+    margin-bottom: 2rem;
     
     .page-item{
         background: $color-fondo;
