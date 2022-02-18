@@ -5,26 +5,48 @@
     padding: 2rem;
 }
 
-.img-nosotras{
-    width: 70%;
-    border-radius: 10%;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    
+.presentacion{
+    margin: 2rem;
+    font-family: $font-cuerpo;
+    font-size: 20px;
+
+    .img-gabinete{
+        width: 100%;
+    }
+
 }
 
-@keyframes aparecer{
-    0% {
-        opacity: 0;
+.img-nosotras{
+    width: 70%;    
+}
+
+.texto-nosotras{
+    font-family: $font-cuerpo;
+
+    h2{
+        font-weight: 800;
     }
-    100% {
-        opacity: 1;
+
+    ul{
+        list-style-type: none;
+        font-size: 18px;
+        padding-left: 0;
     }
 }
+
 
 @media screen and (max-width: 768px){
+
+    .presentacion{
+        font-size: 13px;
+
+    }
     .texto-nosotras{
         text-align: center;
         margin-top: 2rem;
+
+        ul{
+            font-size: 13px;
+        }
     }
 }

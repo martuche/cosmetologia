@@ -11,9 +11,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px 15px;
     margin: 2rem;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-items: center;
+    grid-auto-flow: row;    
     grid-template-areas:
         "producto-1 producto-2 producto-3"
         "producto-4 producto-5 producto-6"
@@ -55,23 +53,33 @@
         grid-area: producto-9;
     }
 
-
-
     .img-tienda {
         width: 55%;
         display: block;
         margin: auto;
+
+        &:hover{
+            opacity: 0.5;
+        }
     }
 
+    a{
+        text-decoration: none;
+    }
 
     h2 {
-        @include estilo-texto ($color-bordo, 25px, bold);
+        @include estilo-texto ($color-texto, 25px, 800);
+        font-family: $font-cuerpo;
 
+        &:hover{
+            color: $color-azul;
+        }
     }
 
-    h3 {
-        font-size: 20px;
+    .carrito{
+        font-family: $font-cuerpo;
     }
+
 
     .btn-borde {
         @extend %boton-link;
@@ -80,8 +88,6 @@
     }
 
 }
-
-
 
 @media screen and (max-width: 768px) {
     .grilla {

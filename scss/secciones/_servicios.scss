@@ -7,10 +7,9 @@
 
 .edit-servicios{
     font-family: $font-cuerpo;
-    margin: 3rem auto 5rem;
 
     h2{
-        @include estilo-texto ($color-texto, 40px, bold);
+        @include estilo-texto ($color-texto, 40px, 800);
     }
 
     .edit-higiene{
@@ -28,4 +27,13 @@
     .edit-acne{
         width: 50%;
     }
+}
+
+@media screen and (max-width: 768px){
+    .edit-servicios{
+        h2{
+            font-size: 30px;
+        }
+    }
+
 }

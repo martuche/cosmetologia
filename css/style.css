@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 * {
   margin: 0;
   padding: 0; }
 
-.btn-borde, .grilla .btn-borde, .contenedor .entrada-blog .btn-borde {
+.btn-borde, .grilla .btn-borde {
   text-decoration: none;
   color: #3A3238;
   border: 1px solid #546CEC;
   padding: 0.25rem; }
-  .btn-borde:hover, .contenedor .entrada-blog .btn-borde:hover {
+  .btn-borde:hover {
     font-weight: bold;
     background-image: linear-gradient(126deg, #546CEC 0%, #C9D7F8 50%); }
 
@@ -94,10 +95,10 @@ nav {
     padding: 0;
     height: 100px;
     line-height: 100px;
-    font-family: "Quattrocento", serif;
+    font-family: "Mulish", sans-serif;
     font-weight: bold; }
   nav .navbar-nav {
-    font-family: "Quattrocento", serif;
+    font-family: "Mulish", sans-serif;
     font-weight: bold; }
     nav .navbar-nav .nav-item {
       margin: 2px; }
@@ -130,7 +131,7 @@ footer {
   padding: 2.5rem; }
   footer .texto-footer {
     color: #E1D89F;
-    font-family: "Quattrocento", serif;
+    font-family: "Mulish", sans-serif;
     font-size: 15px;
     text-align: center;
     align-items: center; }
@@ -143,7 +144,7 @@ footer {
       padding: 0; }
   footer .nav-link {
     color: #E1D89F;
-    font-family: "Quattrocento", serif; }
+    font-family: "Mulish", sans-serif; }
     footer .nav-link:hover {
       color: #C9D7F8; }
 
@@ -179,54 +180,89 @@ footer {
     letter-spacing: normal;
     opacity: 1; } }
   .portada-ppal .titulo-inicio {
-    color: #3A3238;
+    color: #546CEC;
     font-family: "Ultra", serif;
-    font-size: 60px;
-    letter-spacing: 0.2rem; }
+    font-size: 70px; }
   .portada-ppal .subtitulo-inicio {
     font-size: 60px;
-    font-weight: bold; }
+    font-weight: 900;
+    font-family: "Mulish", sans-serif; }
+
+.texto-inicio {
+  text-align: end;
+  font-family: "Mulish", sans-serif; }
+  .texto-inicio h2 {
+    font-weight: 800; }
+
+.img-inicio {
+  width: 60%; }
+
+#texto-productos {
+  text-align: start;
+  font-family: "Mulish", sans-serif; }
+  #texto-productos h2 {
+    font-weight: 800; }
 
 .carousel-item {
   height: 500px; }
   .carousel-item img {
     object-fit: cover;
     max-height: 500px; }
+  .carousel-item h5 {
+    font-family: "Mulish", sans-serif;
+    color: #C9D7F8;
+    font-weight: 800;
+    font-size: 45px;
+    text-shadow: 4px 4px 4px black; }
+  .carousel-item p {
+    font-family: "Mulish", sans-serif;
+    color: #3A3238;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 0 0 5px white; }
 
-.texto-inicio {
-  text-align: end; }
-  .texto-inicio .fs-1 {
-    font-family: "Ultra", serif;
-    color: #3A3238; }
-  .texto-inicio .fs-3 {
-    font-family: "Quattrocento", serif;
-    color: #3A3238; }
-
-.img-inicio {
-  width: 60%; }
-
-#texto-productos {
-  text-align: start; }
-  #texto-productos .fs-1 {
-    font-family: "Ultra", serif;
-    color: #3A3238; }
-  #texto-productos .fs-3 {
-    font-family: "Quattrocento", serif;
-    color: #3A3238; }
+.testimonios {
+  font-family: "Mulish", sans-serif; }
+  .testimonios .titulo-opiniones {
+    margin-top: 2rem;
+    font-size: 40px;
+    font-weight: 800; }
+  .testimonios h2 {
+    font-size: 20px;
+    font-weight: 800; }
+  .testimonios span {
+    font-size: 15px; }
+  .testimonios p {
+    font-size: 18px;
+    font-style: italic; }
+  .testimonios .img-testimonios {
+    width: 80%; }
 
 @media screen and (max-width: 768px) {
-  .img-principal {
+  .portada-ppal .img-principal {
     width: 85%;
     align-items: center; }
-  #titulo-inicio {
+  .portada-ppal .titulo-inicio {
     font-size: 40px;
     text-align: center; }
+  .portada-ppal .subtitulo-inicio {
+    font-size: 35px;
+    text-align: center; }
   .texto-inicio {
-    text-align: center; }
+    text-align: center;
+    font-size: 15px; }
   #texto-productos {
-    text-align: center; }
+    text-align: center;
+    font-size: 15px; }
   .img-inicio {
-    width: 60%; } }
+    width: 100%; }
+  .testimonios {
+    text-align: center; }
+    .testimonios .titulo-opiniones {
+      font-size: 30px;
+      text-align: center; }
+    .testimonios .img-testimonios {
+      width: 100%; } }
 
 .portada-servicios {
   background-image: url(../../img/02.jpg);
@@ -235,12 +271,11 @@ footer {
   padding: 2rem; }
 
 .edit-servicios {
-  font-family: "Quattrocento", serif;
-  margin: 3rem auto 5rem; }
+  font-family: "Mulish", sans-serif; }
   .edit-servicios h2 {
     color: #3A3238;
     font-size: 40px;
-    font-weight: bold; }
+    font-weight: 800; }
   .edit-servicios .edit-higiene {
     width: 100%; }
   .edit-servicios .edit-dermamicro {
@@ -249,6 +284,10 @@ footer {
     width: 50%; }
   .edit-servicios .edit-acne {
     width: 50%; }
+
+@media screen and (max-width: 768px) {
+  .edit-servicios h2 {
+    font-size: 30px; } }
 
 .portada-tienda {
   background-image: url(../../img/03.jpg);
@@ -263,12 +302,7 @@ footer {
   gap: 15px 15px;
   margin: 2rem;
   grid-auto-flow: row;
-  grid-template-areas: "producto-1 producto-2 producto-3"
- "producto-4 producto-5 producto-6"
- "producto-7 producto-8 producto-9";
-  padding: 3rem;
-  font-family: "Quattrocento", serif;
-  align-items: center; }
+  grid-template-areas: "producto-1 producto-2 producto-3" "producto-4 producto-5 producto-6" "producto-7 producto-8 producto-9"; }
   .grilla .producto-1 {
     grid-area: producto-1; }
   .grilla .producto-2 {
@@ -291,12 +325,19 @@ footer {
     width: 55%;
     display: block;
     margin: auto; }
+    .grilla .img-tienda:hover {
+      opacity: 0.5; }
+  .grilla a {
+    text-decoration: none; }
   .grilla h2 {
-    color: #6E4555;
+    color: #3A3238;
     font-size: 25px;
-    font-weight: bold; }
-  .grilla h3 {
-    font-size: 20px; }
+    font-weight: 800;
+    font-family: "Mulish", sans-serif; }
+    .grilla h2:hover {
+      color: #546CEC; }
+  .grilla .carrito {
+    font-family: "Mulish", sans-serif; }
   .grilla .btn-borde {
     display: block;
     text-align: center; }
@@ -308,15 +349,7 @@ footer {
     grid-template-rows: repeat(8, 1fr);
     grid-auto-columns: 1fr;
     grid-auto-flow: row;
-    grid-template-areas: "producto-1"
- "producto-2"
- "producto-3"
- "producto-4"
- "producto-5"
- "producto-6"
- "producto-7"
- "producto-8"
- "producto-9";
+    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5" "producto-6" "producto-7" "producto-8" "producto-9";
     justify-content: center; }
     .grilla .producto-1 {
       grid-area: producto-1; }
@@ -353,13 +386,18 @@ footer {
   .nav-search .btn-search {
     background-color: #546CEC;
     color: #E1D89F; }
+    .nav-search .btn-search:hover {
+      background-color: #C9D7F8;
+      border: #546CEC solid 1px;
+      color: #546CEC; }
 
 .contenedor {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 4rem; }
+  margin: 4rem;
+  font-family: "Mulish", sans-serif; }
   .contenedor .entrada-blog {
     width: 30%;
     margin-bottom: 1rem; }
@@ -370,10 +408,12 @@ footer {
     .contenedor .entrada-blog .titulo-blog {
       color: #3A3238;
       font-size: 25px;
-      font-weight: bold;
+      font-weight: bolder;
       text-decoration: none; }
       .contenedor .entrada-blog .titulo-blog:hover {
         color: #546CEC; }
+    .contenedor .entrada-blog p {
+      text-align: justify; }
 
 .nav-blog {
   background-color: #C9D7F8;
@@ -393,7 +433,9 @@ footer {
     flex-direction: column;
     align-items: center; }
     .contenedor .entrada-blog {
-      width: 90%; } }
+      width: 100%; }
+      .contenedor .entrada-blog .titulo-blog {
+        font-size: 20px; } }
 
 .portada-nosotras {
   background-image: url(../../img/07.jpg);
@@ -401,22 +443,33 @@ footer {
   background-repeat: no-repeat;
   padding: 2rem; }
 
-.img-nosotras {
-  width: 70%;
-  border-radius: 10%;
-  animation-duration: 2s;
-  animation-name: aparecer; }
+.presentacion {
+  margin: 2rem;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px; }
+  .presentacion .img-gabinete {
+    width: 100%; }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+.img-nosotras {
+  width: 70%; }
+
+.texto-nosotras {
+  font-family: "Mulish", sans-serif; }
+  .texto-nosotras h2 {
+    font-weight: 800; }
+  .texto-nosotras ul {
+    list-style-type: none;
+    font-size: 18px;
+    padding-left: 0; }
 
 @media screen and (max-width: 768px) {
+  .presentacion {
+    font-size: 13px; }
   .texto-nosotras {
     text-align: center;
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+    .texto-nosotras ul {
+      font-size: 13px; } }
 
 .portada-contacto {
   background-image: url(../../img/7.jpg);
@@ -427,18 +480,16 @@ footer {
 .edit-turnos-contacto {
   border: solid 1px #546CEC;
   color: #3A3238;
-  font-family: "Quattrocento", serif;
+  font-family: "Mulish", sans-serif;
   width: 40%;
   margin: 2rem;
   padding: 2rem; }
   .edit-turnos-contacto h2 {
-    color: #6E4555;
+    color: #3A3238;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 900;
     text-align: center;
-    margin-bottom: 2rem;
-    font-family: "Ultra", serif;
-    letter-spacing: 0.2rem; }
+    margin-bottom: 2rem; }
   .edit-turnos-contacto .form-control,
   .edit-turnos-contacto #floatingSelect {
     border: none;
@@ -446,24 +497,28 @@ footer {
     background-color: #C9D7F8; }
   .edit-turnos-contacto .input-group-text {
     background-color: #C9D7F8; }
+  .edit-turnos-contacto .btn-borde {
+    background-color: #C9D7F8; }
 
 .lugar {
   border: solid 1px #546CEC;
   color: #3A3238;
-  font-family: "Quattrocento", serif;
+  font-family: "Mulish", sans-serif;
   margin: 2rem;
   padding: 2rem; }
   .lugar h2 {
-    color: #6E4555;
+    color: #3A3238;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 900;
     text-align: center;
-    margin-bottom: 2rem;
-    font-family: "Ultra", serif;
-    letter-spacing: 0.2rem; }
+    margin-bottom: 2rem; }
   .lugar iframe {
     width: 100%; }
 
 @media screen and (max-width: 768px) {
   .edit-turnos-contacto {
-    width: 80%; } }
+    width: 80%; }
+    .edit-turnos-contacto h2 {
+      font-size: 25px; }
+  .lugar h2 {
+    font-size: 25px; } }

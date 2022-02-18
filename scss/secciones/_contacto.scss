@@ -14,11 +14,9 @@
     padding: 2rem;
 
     h2 {
-        @include estilo-texto ($color-bordo, 30px, normal);
+        @include estilo-texto ($color-texto, 30px, 900);
         text-align: center;
         margin-bottom: 2rem;
-        font-family: $font-titulo;
-        letter-spacing: 0.2rem;
     }
 
     .form-control,
@@ -32,12 +30,10 @@
         background-color: $color-fondo;
     }
 
+    .btn-borde{
+        background-color: $color-fondo;
 
-
-
-
-
-
+    }
 }
 
 .lugar {
@@ -48,11 +44,9 @@
     padding: 2rem;
 
     h2 {
-        @include estilo-texto ($color-bordo, 30px, bold);
+        @include estilo-texto ($color-texto, 30px, 900);
         text-align: center;
         margin-bottom: 2rem;
-        font-family: $font-titulo;
-        letter-spacing: 0.2rem;
     }
 
     iframe {
@@ -63,7 +57,19 @@
 @media screen and (max-width: 768px) {
     .edit-turnos-contacto {
         width: 80%;
+
+        h2{
+            font-size: 25px;
+        }        
     }
+
+    .lugar{
+        h2{
+            font-size: 25px;
+        }
+    }
+
+
 
 
 }

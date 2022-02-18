@@ -14,7 +14,6 @@
         animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
 
-
     @-webkit-keyframes tracking-in-contract {
         0% {
             letter-spacing: 1em;
@@ -49,40 +48,25 @@
 
 
     .titulo-inicio {
-        color: $color-texto;
+        color: $color-azul;
         font-family: $font-titulo;
-        font-size: 60px;
-        letter-spacing: 0.2rem;
+        font-size: 70px;
     }
 
     .subtitulo-inicio {
         font-size: 60px;
-        font-weight: bold;
+        font-weight: 900;
+        font-family: $font-cuerpo;
     }
 
-}
-
-.carousel-item {
-    height: 500px;
-
-    img {
-        object-fit: cover;
-        max-height: 500px;
-
-    }
 }
 
 .texto-inicio {
     text-align: end;
+    font-family: $font-cuerpo;
 
-    .fs-1 {
-        font-family: $font-titulo;
-        color: $color-texto;
-    }
-
-    .fs-3 {
-        font-family: $font-cuerpo;
-        color: $color-texto;
+    h2 {
+        font-weight: 800;
     }
 }
 
@@ -93,46 +77,121 @@
 
 #texto-productos {
     text-align: start;
+    font-family: $font-cuerpo;
 
-    .fs-1 {
-        font-family: $font-titulo;
-        color: $color-texto;
+    h2 {
+        font-weight: 800
     }
-
-    .fs-3 {
-        font-family: $font-cuerpo;
-        color: $color-texto;
-    }
-
 }
 
 .btn-borde {
     @extend %boton-link;
 }
 
+.carousel-item {
+    height: 500px;
 
+    img {
+        object-fit: cover;
+        max-height: 500px;
 
-@media screen and (max-width: 768px) {
-    .img-principal {
-        width: 85%;
-        align-items: center;
     }
 
-    #titulo-inicio {
+    h5 {
+        font-family: $font-cuerpo;
+        color: $color-fondo;
+        font-weight: 800;
+        font-size: 45px;
+        text-shadow: 4px 4px 4px black;
+    }
+
+    p {
+        font-family: $font-cuerpo;
+        color: $color-texto;
+        font-size: 20px;
+        font-weight: 800;
+        text-shadow: 0 0 5px white;
+
+    }
+
+}
+
+
+
+.testimonios {
+    font-family: $font-cuerpo;
+
+    .titulo-opiniones {
+        margin-top: 2rem;
         font-size: 40px;
-        text-align: center;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .img-testimonios {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .portada-ppal {
+        .img-principal {
+            width: 85%;
+            align-items: center;
+        }
+
+        .titulo-inicio {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .subtitulo-inicio {
+            font-size: 35px;
+            text-align: center;
+        }
     }
 
     .texto-inicio {
         text-align: center;
+        font-size: 15px;
     }
 
     #texto-productos {
         text-align: center;
+        font-size: 15px;
     }
 
     .img-inicio {
-        width: 60%;
+        width: 100%;
+    }
+
+    .testimonios {
+        text-align: center;
+        .titulo-opiniones {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .img-testimonios {
+            width: 100%;
+        }
+    
     }
 
 }
