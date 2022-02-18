@@ -3,7 +3,7 @@ footer{
     padding: 2.5rem;
 
     .texto-footer{
-        color: $color-claro;
+        color: $color-fondo;
         font-family: $font-cuerpo;
         font-size: 15px;
         text-align: center;
@@ -22,16 +22,18 @@ footer{
 
     }       
     .nav-link{
-        color: $color-claro;
+        color: $color-fondo;
         font-family: $font-cuerpo;      
 
         &:hover{
-            color: $color-fondo;
+            color: $color-azul;
         }
     }
 }
 
 @media screen and (max-width: 1200px){
-    
+    .redes-sociales, .horarios, .telefono, .mail, .ubicacion, .posicion{
+        margin-bottom: 1rem;
+    }
 
 }

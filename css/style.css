@@ -126,11 +126,17 @@ nav {
       nav .navbar-nav .submenu:hover ul {
         display: block; }
 
+@media screen and (max-width: 1200px) {
+  .navbar-brand {
+    font-size: 15px; }
+  .nav-item {
+    font-size: 15px; } }
+
 footer {
   background-color: #6E4555;
   padding: 2.5rem; }
   footer .texto-footer {
-    color: #E1D89F;
+    color: #C9D7F8;
     font-family: "Mulish", sans-serif;
     font-size: 15px;
     text-align: center;
@@ -143,10 +149,14 @@ footer {
       margin: 0;
       padding: 0; }
   footer .nav-link {
-    color: #E1D89F;
+    color: #C9D7F8;
     font-family: "Mulish", sans-serif; }
     footer .nav-link:hover {
-      color: #C9D7F8; }
+      color: #546CEC; }
+
+@media screen and (max-width: 1200px) {
+  .redes-sociales, .horarios, .telefono, .mail, .ubicacion, .posicion {
+    margin-bottom: 1rem; } }
 
 .portada-ppal {
   background-image: url(../../img/22.jpg);
@@ -203,18 +213,18 @@ footer {
   #texto-productos h2 {
     font-weight: 800; }
 
-.carousel-item {
+.carousel-tamanio {
   height: 500px; }
-  .carousel-item img {
+  .carousel-tamanio img {
     object-fit: cover;
     max-height: 500px; }
-  .carousel-item h5 {
+  .carousel-tamanio h5 {
     font-family: "Mulish", sans-serif;
     color: #C9D7F8;
     font-weight: 800;
     font-size: 45px;
     text-shadow: 4px 4px 4px black; }
-  .carousel-item p {
+  .carousel-tamanio p {
     font-family: "Mulish", sans-serif;
     color: #3A3238;
     font-size: 20px;

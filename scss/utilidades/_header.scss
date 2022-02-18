@@ -7,7 +7,9 @@ nav {
         line-height: 100px;
         font-family: $font-cuerpo;
         font-weight: bold;
+
     }
+
 
     .navbar-nav {
         font-family: $font-cuerpo;
@@ -64,6 +66,13 @@ nav {
         }
 
     }
+}
 
-
+@media screen and (max-width: 1200px){
+    .navbar-brand{
+        font-size: 15px;
+    }
+    .nav-item{
+        font-size: 15px;
+    }
 }

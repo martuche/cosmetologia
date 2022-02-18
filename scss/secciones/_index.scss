@@ -88,7 +88,7 @@
     @extend %boton-link;
 }
 
-.carousel-item {
+.carousel-tamanio {
     height: 500px;
 
     img {
@@ -166,6 +166,7 @@
             text-align: center;
         }
     }
+
 
     .texto-inicio {
         text-align: center;
