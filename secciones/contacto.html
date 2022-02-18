@@ -111,7 +111,7 @@
                         <label for="floatingInput">Email</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <select required class="form-select" id="floatingSelect" aria-label="Floating label select example">
                             <option selected required disabled>¿Que tratamiento elegís?</option>
                             <option value="1">Higiene facial profunda</option>
                             <option value="2">Dermaplaning</option>
@@ -139,7 +139,7 @@
                 <h2>CONTACTANOS</h2>
                 <form action="#" method="GET">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" placeholder="Nombre" name="Nombre">
+                        <input required type="text" class="form-control" placeholder="Nombre" name="Nombre">
                         <label for="floatingInput">Nombre</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -151,7 +151,7 @@
                         <label for="floatingInput">Telefono</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                        <select required class="form-select" id="floatingSelect" aria-label="Floating label select example"
                             name="Tipo de contacto">
                             <option selected disabled required>Seleccionar</option>
                             <option value="1">Consulta</option>
@@ -161,7 +161,7 @@
                         <label for="floatingSelect">Tipo de contacto</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Deje un comentario aqui" name="Mensaje"></textarea>
+                        <textarea required class="form-control" placeholder="Deje un comentario aqui" name="Mensaje"></textarea>
                         <label for="floatingTextarea">Comentarios</label>
                     </div>
                     <div class="text-center">
@@ -243,7 +243,6 @@
     <script>
         new WOW().init();
     </script>
-    <script src="../js/contacto.js"></script>
 </body>
 
 </html>
