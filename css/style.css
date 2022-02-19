@@ -212,7 +212,7 @@ footer {
   .portada-ppal .titulo-inicio {
     color: #546CEC;
     font-family: "Ultra", serif;
-    font-size: 70px; }
+    font-size: 68px; }
   .portada-ppal .subtitulo-inicio {
     font-size: 60px;
     font-weight: 900;
@@ -272,6 +272,10 @@ footer {
 
 .testimonios .img-testimonios {
   width: 80%; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portada-ppal .titulo-inicio {
+    font-size: 49px; } }
 
 @media screen and (max-width: 768px) {
   .portada-ppal .img-principal {

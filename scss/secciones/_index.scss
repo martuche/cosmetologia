@@ -84,7 +84,7 @@
     .titulo-inicio {
         color: $color-azul;
         font-family: $font-titulo;
-        font-size: 70px;
+        font-size: 68px;
     }
 
     .subtitulo-inicio {
@@ -123,7 +123,7 @@
     font-weight: 800;
     font-size: 20px;
 
-    &:hover{
+    &:hover {
         color: $color-texto;
     }
 }
@@ -179,6 +179,16 @@
 
     .img-testimonios {
         width: 80%;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .portada-ppal {
+        .titulo-inicio {
+            font-size: 49px;
+        }
     }
 
 
