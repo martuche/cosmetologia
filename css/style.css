@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0; }
 
-.btn-borde, .grilla .btn-borde, .edit-turnos-contacto .btn-borde {
+.btn-borde-inicio, .grilla .btn-borde-tienda, .edit-turnos-contacto .btn-borde-contacto {
   text-decoration: none;
   color: #3A3238;
   padding: 0.25rem; }
-  .btn-borde:hover {
+  .btn-borde-inicio:hover, .grilla .btn-borde-tienda:hover, .edit-turnos-contacto .btn-borde-contacto:hover {
     background-image: linear-gradient(126deg, #546CEC 0%, #C9D7F8 50%); }
 
 .exfoliacion {
@@ -231,8 +231,12 @@ footer {
   #texto-productos h2 {
     font-weight: 800; }
 
-.btn-borde:hover {
-  color: #3A3238; }
+.btn-borde-inicio {
+  text-decoration: underline;
+  font-weight: 800;
+  font-size: 20px; }
+  .btn-borde-inicio:hover {
+    color: #3A3238; }
 
 .carousel .carousel-item {
   max-height: 500px; }
@@ -370,9 +374,10 @@ footer {
     font-weight: 800; }
     .grilla h2:hover {
       color: #546CEC; }
-  .grilla .btn-borde {
+  .grilla .btn-borde-tienda {
     display: block;
-    text-align: center; }
+    text-align: center;
+    border: solid 1px #3A3238; }
 
 @media screen and (max-width: 768px) {
   .grilla {
@@ -534,9 +539,11 @@ footer {
     background-color: #C9D7F8; }
   .edit-turnos-contacto .input-group-text {
     background-color: #C9D7F8; }
-  .edit-turnos-contacto .btn-borde {
+  .edit-turnos-contacto .btn-borde-contacto {
     background-color: #C9D7F8;
-    border: none; }
+    border: none;
+    font-weight: 800;
+    margin-right: 2rem; }
 
 .lugar {
   border: solid 1px #546CEC;

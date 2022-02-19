@@ -30,10 +30,12 @@
         background-color: $color-fondo;
     }
 
-    .btn-borde{
+    .btn-borde-contacto{
         @extend %boton-link;
         background-color: $color-fondo;
         border: none;
+        font-weight: 800;
+        margin-right: 2rem;
     }
 }
 

@@ -77,10 +77,11 @@
     }
 
     
-    .btn-borde {
+    .btn-borde-tienda {
         @extend %boton-link;
         display: block;
         text-align: center;
+        border: solid 1px $color-texto;
     }
 
 }
