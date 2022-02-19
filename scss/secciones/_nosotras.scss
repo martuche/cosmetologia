@@ -7,7 +7,7 @@
 }
 
 .presentacion{
-    margin: 2rem;
+    margin: 1rem;
     font-size: 20px;
 
     .img-gabinete{
@@ -36,15 +36,19 @@
 @media screen and (max-width: 768px){
 
     .presentacion{
-        font-size: 13px;
+        font-size: 15px;
 
+    }
+
+    .img-nosotras{
+        width: 100%;
     }
     .texto-nosotras{
         text-align: center;
         margin-top: 2rem;
 
         ul{
-            font-size: 13px;
+            font-size: 15px;
         }
     }
 }

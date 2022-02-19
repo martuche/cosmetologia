@@ -488,7 +488,7 @@ footer {
   padding: 2rem; }
 
 .presentacion {
-  margin: 2rem;
+  margin: 1rem;
   font-size: 20px; }
   .presentacion .img-gabinete {
     width: 100%; }
@@ -506,12 +506,14 @@ footer {
 
 @media screen and (max-width: 768px) {
   .presentacion {
-    font-size: 13px; }
+    font-size: 15px; }
+  .img-nosotras {
+    width: 100%; }
   .texto-nosotras {
     text-align: center;
     margin-top: 2rem; }
     .texto-nosotras ul {
-      font-size: 13px; } }
+      font-size: 15px; } }
 
 .portada-contacto {
   background-image: url(../img/7.jpg);
