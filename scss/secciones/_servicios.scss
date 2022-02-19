@@ -1,4 +1,4 @@
-.portada-servicios{
+.portada-servicios {
     background-image: url(../img/02.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,32 +6,33 @@
     padding: 2rem;
 }
 
-.edit-servicios{
+.edit-servicios {
 
-    h2{
+    h2 {
         @include estilo-texto ($color-texto, 40px, 800);
     }
 
-    .edit-higiene{
-        width: 100%;        
+    .edit-higiene {
+        width: 100%;
     }
 
-    .edit-dermamicro{
+    .edit-dermamicro {
         width: 90%;
     }
 
-    .edit-video{
+    .edit-video {
         width: 50%;
     }
 
-    .edit-acne{
+    .edit-acne {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 768px){
-    .edit-servicios{
-        h2{
+
+@media screen and (max-width: 768px) {
+    .edit-servicios {
+        h2 {
             font-size: 30px;
         }
     }
