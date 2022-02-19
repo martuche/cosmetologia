@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,800;0,900;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -46,11 +45,11 @@
 
 body {
   background-color: #C9D7F8;
-  margin-top: 118px; }
+  margin-top: 118px;
+  font-family: "Mulish", sans-serif; }
   body h1 {
     font-family: "Ultra", serif;
-    color: #E1D89F;
-    text-shadow: 5px -2px 2px rgba(0, 0, 0, 0.6); }
+    color: #E1D89F; }
   body .text-shadow-pop-tr {
     -webkit-animation: text-shadow-pop-tr 0.6s both;
     animation: text-shadow-pop-tr 0.6s both; }
@@ -166,6 +165,29 @@ footer {
   padding: 3rem; }
   .portada-ppal .img-principal {
     width: 100%; }
+  .portada-ppal .text-shadow-pop-tr {
+    -webkit-animation: text-shadow-pop-tr 0.6s both;
+    animation: text-shadow-pop-tr 0.6s both; }
+
+@-webkit-keyframes text-shadow-pop-tr {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    text-shadow: 1px -1px #555555, 2px -2px #555555, 3px -3px #555555, 4px -4px #555555, 5px -5px #555555, 6px -6px #555555, 7px -7px #555555, 8px -8px #555555;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px); } }
+
+@keyframes text-shadow-pop-tr {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    text-shadow: 1px -1px #555555, 2px -2px #555555, 3px -3px #555555, 4px -4px #555555, 5px -5px #555555, 6px -6px #555555, 7px -7px #555555, 8px -8px #555555;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px); } }
   .portada-ppal .tracking-in-contract {
     -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
@@ -195,12 +217,10 @@ footer {
     font-size: 70px; }
   .portada-ppal .subtitulo-inicio {
     font-size: 60px;
-    font-weight: 900;
-    font-family: "Mulish", sans-serif; }
+    font-weight: 900; }
 
 .texto-inicio {
-  text-align: end;
-  font-family: "Mulish", sans-serif; }
+  text-align: end; }
   .texto-inicio h2 {
     font-weight: 800; }
 
@@ -208,8 +228,7 @@ footer {
   width: 60%; }
 
 #texto-productos {
-  text-align: start;
-  font-family: "Mulish", sans-serif; }
+  text-align: start; }
   #texto-productos h2 {
     font-weight: 800; }
 
@@ -219,44 +238,44 @@ footer {
     object-fit: cover;
     max-height: 500px; }
   .carousel-tamanio h5 {
-    font-family: "Mulish", sans-serif;
     color: #C9D7F8;
     font-weight: 800;
     font-size: 45px;
     text-shadow: 4px 4px 4px black; }
   .carousel-tamanio p {
-    font-family: "Mulish", sans-serif;
     color: #3A3238;
     font-size: 20px;
     font-weight: 800;
     text-shadow: 0 0 5px white; }
 
-.testimonios {
-  font-family: "Mulish", sans-serif; }
-  .testimonios .titulo-opiniones {
-    margin-top: 2rem;
-    font-size: 40px;
-    font-weight: 800; }
-  .testimonios h2 {
-    font-size: 20px;
-    font-weight: 800; }
-  .testimonios span {
-    font-size: 15px; }
-  .testimonios p {
-    font-size: 18px;
-    font-style: italic; }
-  .testimonios .img-testimonios {
-    width: 80%; }
+.testimonios .titulo-opiniones {
+  margin-top: 2rem;
+  font-size: 40px;
+  font-weight: 800; }
+
+.testimonios h2 {
+  font-size: 20px;
+  font-weight: 800; }
+
+.testimonios span {
+  font-size: 15px; }
+
+.testimonios p {
+  font-size: 18px;
+  font-style: italic; }
+
+.testimonios .img-testimonios {
+  width: 80%; }
 
 @media screen and (max-width: 768px) {
   .portada-ppal .img-principal {
     width: 85%;
     align-items: center; }
   .portada-ppal .titulo-inicio {
-    font-size: 40px;
+    font-size: 20px;
     text-align: center; }
   .portada-ppal .subtitulo-inicio {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center; }
   .texto-inicio {
     text-align: center;
@@ -266,6 +285,10 @@ footer {
     font-size: 15px; }
   .img-inicio {
     width: 100%; }
+  .carousel-tamanio .carousel-indicators {
+    bottom: 300px; }
+  .carousel-tamanio .carousel-control-prev, .carousel-tamanio .carousel-control-next {
+    bottom: 200px; }
   .testimonios {
     text-align: center; }
     .testimonios .titulo-opiniones {
