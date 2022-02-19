@@ -3,8 +3,8 @@ body {
     margin-top: 118px;
     font-family: $font-cuerpo;
 
-    
-    h1 {
+
+    .titulo-portada {
         font-family: $font-titulo;
         color: $color-claro;
     }
@@ -63,13 +63,12 @@ body {
 
 @media screen and (max-width: 768px) {
     .seccion-portada {
-        h1 {
+        .titulo-portada {
             text-align: center;
-            font-size: 55px;
+            font-size: 35px;
         }
-
         .img-portada {
-            width: 40%;
+            width: 55%;
         }
     }
 }

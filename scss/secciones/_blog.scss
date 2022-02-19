@@ -5,18 +5,19 @@
     padding: 2rem;
 }
 
-.nav-search{
+.nav-search {
     background-color: $color-fondo;
 
-    .form-search{
+    .form-search {
         background-color: $color-fondo;
         border: $color-azul solid 1px;
     }
-    .btn-search{
+
+    .btn-search {
         background-color: $color-azul;
         color: $color-claro;
 
-        &:hover{
+        &:hover {
             background-color: $color-fondo;
             border: $color-azul solid 1px;
             color: $color-azul;
@@ -29,7 +30,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 4rem;
+    margin: 2rem;
     font-family: $font-cuerpo;
 
     .entrada-blog {
@@ -39,47 +40,47 @@
         .img-blog {
             width: 100%;
 
-            &:hover{
-                opacity: 0.5;            
+            &:hover {
+                opacity: 0.5;
             }
         }
 
-        .titulo-blog{
+        .titulo-blog {
             @include estilo-texto ($color-texto, 25px, bolder);
             text-decoration: none;
 
-            &:hover{
+            &:hover {
                 color: $color-azul;
             }
         }
 
-        p{
+        p {
             text-align: justify;
         }
     }
 }
 
-.nav-blog{
-    background-color: $color-fondo; 
+.nav-blog {
+    background-color: $color-fondo;
     margin-bottom: 2rem;
-    
-    .page-item{
+
+    .page-item {
         background: $color-fondo;
 
-        .page-link{
+        .page-link {
             background-color: $color-fondo;
             border: $color-azul solid 1px;
-    
-            &:hover{
+
+            &:hover {
                 background-color: $color-azul;
                 color: $color-claro;
             }
         }
-    }    
+    }
 }
 
-@media screen and (max-width: 768px){
-    .contenedor{
+@media screen and (max-width: 768px) {
+    .contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -87,11 +88,14 @@
         .entrada-blog {
             width: 100%;
 
-            .titulo-blog{
-                font-size: 20px;
+            .titulo-blog {
+                a {
+                    font-size: 14px;
+                    text-align: left;
+                    font-weight: 800;
+                }
             }
         }
-   
+
     }
 }
-
