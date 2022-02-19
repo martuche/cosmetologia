@@ -217,7 +217,8 @@ footer {
     font-size: 70px; }
   .portada-ppal .subtitulo-inicio {
     font-size: 60px;
-    font-weight: 900; }
+    font-weight: 900;
+    color: #3A3238; }
 
 .texto-inicio {
   text-align: end; }
@@ -232,17 +233,17 @@ footer {
   #texto-productos h2 {
     font-weight: 800; }
 
-.carousel-tamanio {
-  height: 500px; }
-  .carousel-tamanio img {
+.carousel .carousel-item {
+  max-height: 500px; }
+  .carousel .carousel-item img {
     object-fit: cover;
     max-height: 500px; }
-  .carousel-tamanio h5 {
+  .carousel .carousel-item h5 {
     color: #C9D7F8;
     font-weight: 800;
     font-size: 45px;
     text-shadow: 4px 4px 4px black; }
-  .carousel-tamanio p {
+  .carousel .carousel-item p {
     color: #3A3238;
     font-size: 20px;
     font-weight: 800;
@@ -285,10 +286,6 @@ footer {
     font-size: 15px; }
   .img-inicio {
     width: 100%; }
-  .carousel-tamanio .carousel-indicators {
-    bottom: 300px; }
-  .carousel-tamanio .carousel-control-prev, .carousel-tamanio .carousel-control-next {
-    bottom: 200px; }
   .testimonios {
     text-align: center; }
     .testimonios .titulo-opiniones {

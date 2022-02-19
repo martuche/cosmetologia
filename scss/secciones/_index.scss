@@ -90,6 +90,7 @@
     .subtitulo-inicio {
         font-size: 60px;
         font-weight: 900;
+        color: $color-texto;
     }
 
 }
@@ -119,30 +120,30 @@
     @extend %boton-link;
 }
 
-.carousel-tamanio {
-    height: 500px;
-
-    img {
-        object-fit: cover;
+.carousel {
+    .carousel-item {
         max-height: 500px;
 
+        img {
+            object-fit: cover;
+            max-height: 500px;
+        }
+
+        h5 {
+            color: $color-fondo;
+            font-weight: 800;
+            font-size: 45px;
+            text-shadow: 4px 4px 4px black;
+        }
+
+        p {
+            color: $color-texto;
+            font-size: 20px;
+            font-weight: 800;
+            text-shadow: 0 0 5px white;
+
+        }
     }
-
-    h5 {
-        color: $color-fondo;
-        font-weight: 800;
-        font-size: 45px;
-        text-shadow: 4px 4px 4px black;
-    }
-
-    p {
-        color: $color-texto;
-        font-size: 20px;
-        font-weight: 800;
-        text-shadow: 0 0 5px white;
-
-    }
-
 }
 
 
@@ -192,7 +193,7 @@
             font-size: 25px;
             text-align: center;
         }
-    }    
+    }
 
     .texto-inicio {
         text-align: center;
@@ -206,16 +207,6 @@
 
     .img-inicio {
         width: 100%;
-    }
-
-    .carousel-tamanio {
-        .carousel-indicators {
-            bottom: 300px;
-        }
-
-        .carousel-control-prev, .carousel-control-next{
-            bottom: 200px;
-        }
     }
 
     .testimonios {
