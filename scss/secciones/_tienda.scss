@@ -69,18 +69,13 @@
 
     h2 {
         @include estilo-texto ($color-texto, 25px, 800);
-        font-family: $font-cuerpo;
 
         &:hover{
             color: $color-azul;
         }
     }
 
-    .carrito{
-        font-family: $font-cuerpo;
-    }
-
-
+    
     .btn-borde {
         @extend %boton-link;
         display: block;

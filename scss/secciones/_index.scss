@@ -101,6 +101,7 @@
     h2 {
         font-weight: 800;
     }
+
 }
 
 .img-inicio {
@@ -118,6 +119,10 @@
 
 .btn-borde {
     @extend %boton-link;
+
+    &:hover{
+        color: $color-texto;
+    }
 }
 
 .carousel {

@@ -31,7 +31,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 2rem;
-    font-family: $font-cuerpo;
 
     .entrada-blog {
         width: 30%;
@@ -46,12 +45,21 @@
         }
 
         .titulo-blog {
-            @include estilo-texto ($color-texto, 25px, bolder);
             text-decoration: none;
 
-            &:hover {
-                color: $color-azul;
+            h2 {
+                @include estilo-texto ($color-texto, 25px, 800);
+
+                &:hover {
+                    color: $color-azul;
+                }
             }
+
+        }
+
+        .fecha{
+            font-size: 15px;
+            font-style: italic;
         }
 
         p {
@@ -89,9 +97,9 @@
             width: 100%;
 
             .titulo-blog {
-                a {
-                    font-size: 14px;
-                    text-align: left;
+                h2 {
+                    font-size: 18px;
+                    text-align: center;
                     font-weight: 800;
                 }
             }

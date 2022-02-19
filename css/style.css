@@ -4,13 +4,11 @@
   margin: 0;
   padding: 0; }
 
-.btn-borde, .grilla .btn-borde {
+.btn-borde, .grilla .btn-borde, .edit-turnos-contacto .btn-borde {
   text-decoration: none;
   color: #3A3238;
-  border: 1px solid #546CEC;
   padding: 0.25rem; }
   .btn-borde:hover {
-    font-weight: bold;
     background-image: linear-gradient(126deg, #546CEC 0%, #C9D7F8 50%); }
 
 .exfoliacion {
@@ -233,6 +231,9 @@ footer {
   #texto-productos h2 {
     font-weight: 800; }
 
+.btn-borde:hover {
+  color: #3A3238; }
+
 .carousel .carousel-item {
   max-height: 500px; }
   .carousel .carousel-item img {
@@ -300,20 +301,22 @@ footer {
   background-repeat: no-repeat;
   padding: 2rem; }
 
-.edit-servicios {
-  font-family: "Mulish", sans-serif; }
-  .edit-servicios h2 {
-    color: #3A3238;
-    font-size: 40px;
-    font-weight: 800; }
-  .edit-servicios .edit-higiene {
-    width: 100%; }
-  .edit-servicios .edit-dermamicro {
-    width: 90%; }
-  .edit-servicios .edit-video {
-    width: 50%; }
-  .edit-servicios .edit-acne {
-    width: 50%; }
+.edit-servicios h2 {
+  color: #3A3238;
+  font-size: 40px;
+  font-weight: 800; }
+
+.edit-servicios .edit-higiene {
+  width: 100%; }
+
+.edit-servicios .edit-dermamicro {
+  width: 90%; }
+
+.edit-servicios .edit-video {
+  width: 50%; }
+
+.edit-servicios .edit-acne {
+  width: 50%; }
 
 @media screen and (max-width: 768px) {
   .edit-servicios h2 {
@@ -362,12 +365,9 @@ footer {
   .grilla h2 {
     color: #3A3238;
     font-size: 25px;
-    font-weight: 800;
-    font-family: "Mulish", sans-serif; }
+    font-weight: 800; }
     .grilla h2:hover {
       color: #546CEC; }
-  .grilla .carrito {
-    font-family: "Mulish", sans-serif; }
   .grilla .btn-borde {
     display: block;
     text-align: center; }
@@ -426,8 +426,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 2rem;
-  font-family: "Mulish", sans-serif; }
+  margin: 2rem; }
   .contenedor .entrada-blog {
     width: 30%;
     margin-bottom: 1rem; }
@@ -436,12 +435,16 @@ footer {
       .contenedor .entrada-blog .img-blog:hover {
         opacity: 0.5; }
     .contenedor .entrada-blog .titulo-blog {
-      color: #3A3238;
-      font-size: 25px;
-      font-weight: bolder;
       text-decoration: none; }
-      .contenedor .entrada-blog .titulo-blog:hover {
-        color: #546CEC; }
+      .contenedor .entrada-blog .titulo-blog h2 {
+        color: #3A3238;
+        font-size: 25px;
+        font-weight: 800; }
+        .contenedor .entrada-blog .titulo-blog h2:hover {
+          color: #546CEC; }
+    .contenedor .entrada-blog .fecha {
+      font-size: 15px;
+      font-style: italic; }
     .contenedor .entrada-blog p {
       text-align: justify; }
 
@@ -464,9 +467,9 @@ footer {
     align-items: center; }
     .contenedor .entrada-blog {
       width: 100%; }
-      .contenedor .entrada-blog .titulo-blog a {
-        font-size: 14px;
-        text-align: left;
+      .contenedor .entrada-blog .titulo-blog h2 {
+        font-size: 18px;
+        text-align: center;
         font-weight: 800; } }
 
 .portada-nosotras {
@@ -477,7 +480,6 @@ footer {
 
 .presentacion {
   margin: 2rem;
-  font-family: "Mulish", sans-serif;
   font-size: 20px; }
   .presentacion .img-gabinete {
     width: 100%; }
@@ -485,14 +487,13 @@ footer {
 .img-nosotras {
   width: 70%; }
 
-.texto-nosotras {
-  font-family: "Mulish", sans-serif; }
-  .texto-nosotras h2 {
-    font-weight: 800; }
-  .texto-nosotras ul {
-    list-style-type: none;
-    font-size: 18px;
-    padding-left: 0; }
+.texto-nosotras h2 {
+  font-weight: 800; }
+
+.texto-nosotras ul {
+  list-style-type: none;
+  font-size: 18px;
+  padding-left: 0; }
 
 @media screen and (max-width: 768px) {
   .presentacion {
@@ -512,7 +513,6 @@ footer {
 .edit-turnos-contacto {
   border: solid 1px #546CEC;
   color: #3A3238;
-  font-family: "Mulish", sans-serif;
   width: 40%;
   margin: 2rem;
   padding: 2rem; }
@@ -530,12 +530,12 @@ footer {
   .edit-turnos-contacto .input-group-text {
     background-color: #C9D7F8; }
   .edit-turnos-contacto .btn-borde {
-    background-color: #C9D7F8; }
+    background-color: #C9D7F8;
+    border: none; }
 
 .lugar {
   border: solid 1px #546CEC;
   color: #3A3238;
-  font-family: "Mulish", sans-serif;
   margin: 2rem;
   padding: 2rem; }
   .lugar h2 {

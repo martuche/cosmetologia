@@ -8,7 +8,6 @@
 .edit-turnos-contacto {
     border: solid 1px $color-azul;
     color: $color-texto;
-    font-family: $font-cuerpo;
     width: 40%;
     margin: 2rem;
     padding: 2rem;
@@ -31,15 +30,15 @@
     }
 
     .btn-borde{
+        @extend %boton-link;
         background-color: $color-fondo;
-
+        border: none;
     }
 }
 
 .lugar {
     border: solid 1px $color-azul;
     color: $color-texto;
-    font-family: $font-cuerpo;
     margin: 2rem;
     padding: 2rem;
 

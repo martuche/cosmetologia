@@ -1,11 +1,9 @@
 %boton-link{
     text-decoration: none;
     color: $color-texto;
-    border: 1px solid $color-azul;
     padding: 0.25rem;
 
     &:hover {
-        font-weight: bold;
         background-image: linear-gradient(126deg, $color-azul 0%, $color-fondo 50%);
     }
 }
